@@ -1,0 +1,251 @@
+div {
+    box-sizing: border-box;
+}
+
+.wrapper-container {
+    height: 100vh;
+    width: 100vw;
+    padding-left: 25%;
+    background: linear-gradient(-45deg, rgb(106, 120, 209), rgb(0, 164, 189));
+    transition: padding 0.5s ease 0s;
+    position: relative;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 25%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(51, 71, 91);
+    will-change: transform;
+    transform: translateX(0px);
+}
+
+.sidebar .sidebar-header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(66, 91, 118);
+}
+
+.sidebar .sidebar-body {
+    position: relative;
+    height: 100%;
+    overflow-x: scroll;
+}
+
+.sidebar .sidebar-header .tab-active.template {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 5rem;
+    width: 25%;
+    transform: translateX(0%);
+    transition: transform 0.3s ease-in-out 0s;
+    background-color: rgb(51, 71, 91);
+}
+
+.sidebar .sidebar-header .tab {
+    width: 100%;
+    height: 5rem;
+    border-right: 1px solid rgb(51, 71, 91);
+    border-bottom: 1px solid rgb(51, 71, 91);
+    z-index: 1;
+    cursor: pointer;
+    flex-direction: row;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.sidebar .sidebar-header .tab .tab-icon {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.sidebar .sidebar-header .tab-active.details {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 5rem;
+    width: 25%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out 0s;
+    background-color: rgb(51, 71, 91);
+}
+
+.sidebar .sidebar-header .tab-active.stylize {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 5rem;
+    width: 25%;
+    transform: translateX(200%);
+    transition: transform 0.3s ease-in-out 0s;
+    background-color: rgb(51, 71, 91);
+}
+
+.sidebar .sidebar-header .tab-active.images {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 5rem;
+    width: 25%;
+    transform: translateX(300%);
+    transition: transform 0.3s ease-in-out 0s;
+    background-color: rgb(51, 71, 91);
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.content .content-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.content .content-body .content-body-logo {
+    width: 80%;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .content-body .content-body-logo .content-body-logo-container {
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 2rem 0px;
+}
+
+.content .content-body .content-body-logo .content-body-logo-container img.logo {
+    margin: 0px auto;
+    width: 10rem;
+}
+
+.content .content-body .content-body-preview {
+    width: 80%;
+}
+
+.content .content-body .content-body-preview .content-body-preview-container {
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.content .content-body .content-body-preview .content-body-preview-container .preview-header {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    background-color: rgb(51, 71, 91);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px 8px 0px 0px;
+}
+
+.content .content-body .content-body-preview .content-body-preview-container .preview-header .header-dot {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.content .content-body .content-body-preview .content-body-preview-container .preview-header .header-dot:nth-child(1) {
+    background-color: rgb(242, 84, 91);
+}
+
+.content .content-body .content-body-preview .content-body-preview-container .preview-header .header-dot:nth-child(2) {
+    background-color: rgb(245, 194, 107);
+}
+
+.content .content-body .content-body-preview .content-body-preview-container .preview-header .header-dot:nth-child(3) {
+    background-color: rgb(0, 189, 165);
+}
+
+.content .content-body .content-body-preview .content-body-preview-container .preview-title {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 71, 91);
+}
+
+.content .content-body .content-body-preview .content-body-preview-container .preview-main {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 0px 8px 8px;
+}
+
+.content .content-body .content-body-preview .content-body-preview-container .preview-main .signature-wrapper {
+    width: 100%;
+    padding: 5.625rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.content .content-body .content-body-footer {
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0px;
+}
+
+.content .content-body .content-body-footer .create-signature-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 71, 91);
+}
+
+.content .content-body .content-body-footer .clear-input {
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.content .content-body .content-body-footer .clear-input-icon {
+    width: 0.75rem;
+    height: 0.75rem;
+    fill: rgb(255, 255, 255);
+    display: inline-block;
+    margin-right: 0.75rem;
+    line-height: 1rem;
+}

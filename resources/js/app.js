@@ -29,6 +29,11 @@ Vue.component("preview", require("./components/Preview.vue").default);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+import { createPinia, PiniaVuePlugin } from "pinia";
+Vue.use(PiniaVuePlugin);
+const pinia = createPinia();
+
 const app = new Vue({
     el: "#app",
+    pinia,
 });

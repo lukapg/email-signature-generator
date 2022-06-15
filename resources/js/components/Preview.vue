@@ -7,11 +7,8 @@
             href="//www.hubspot.com/resources/tool"
             target="_blank"
             rel="noopener noreferrer"
-            ><img
-              src="//cdn2.hubspot.net/hubfs/53/tools/hubspot-tools.svg"
-              alt="HubSpot Tools"
-              class="logo"
-          /></a>
+            >E-mail signature generator</a
+          >
         </div>
       </div>
       <div class="content-body-preview">
@@ -29,7 +26,793 @@
           </div>
           <div>
             <div class="preview-main">
-              <div class="signature-wrapper"></div>
+              <div class="signature-wrapper">
+                <table
+                  cellpadding="0"
+                  cellspacing="0"
+                  class="sc-gPEVay eQYmiW"
+                  style="vertical-align: -webkit-baseline-middle"
+                  :style="
+                    'font-size:' +
+                    generatorStore.font_size +
+                    ';' +
+                    'font-family: ' +
+                    generatorStore.font_family +
+                    ';'
+                  "
+                >
+                  <tbody>
+                    <tr>
+                      <td>
+                        <table
+                          cellpadding="0"
+                          cellspacing="0"
+                          class="sc-gPEVay eQYmiW"
+                          style="vertical-align: -webkit-baseline-middle"
+                          :style="
+                            'font-size:' +
+                            generatorStore.font_size +
+                            ';' +
+                            'font-family: ' +
+                            generatorStore.font_family +
+                            ';'
+                          "
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                style="vertical-align: top"
+                                v-if="
+                                  generatorStore.linkedin ||
+                                  generatorStore.twitter ||
+                                  generatorStore.instagram ||
+                                  generatorStore.facebook
+                                "
+                              >
+                                <table
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  class="sc-gPEVay eQYmiW"
+                                  style="
+                                    vertical-align: -webkit-baseline-middle;
+                                  "
+                                  :style="
+                                    'font-size:' +
+                                    generatorStore.font_size +
+                                    ';' +
+                                    'font-family: ' +
+                                    generatorStore.font_family +
+                                    ';'
+                                  "
+                                >
+                                  <tbody>
+                                    <tr>
+                                      <td height="30"></td>
+                                    </tr>
+                                    <tr>
+                                      <td style="text-align: center">
+                                        <table
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          class="sc-gPEVay eQYmiW"
+                                          style="
+                                            vertical-align: -webkit-baseline-middle;
+                                            display: inline-block;
+                                          "
+                                          :style="
+                                            'font-size:' +
+                                            generatorStore.font_size +
+                                            ';' +
+                                            'font-family: ' +
+                                            generatorStore.font_family +
+                                            ';'
+                                          "
+                                        >
+                                          <tbody>
+                                            <tr style="text-align: center">
+                                              <td
+                                                v-if="generatorStore.facebook"
+                                              >
+                                                <a
+                                                  :href="
+                                                    '//' +
+                                                    generatorStore.facebook
+                                                  "
+                                                  color="#1e1e20"
+                                                  class="sc-hzDkRC kpsoyz"
+                                                  style="
+                                                    display: inline-block;
+                                                    padding: 0px;
+                                                  "
+                                                  :style="
+                                                    'background-color:' +
+                                                    generatorStore.link_color
+                                                  "
+                                                  ><img
+                                                    src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/facebook-icon-2x.png"
+                                                    alt="facebook"
+                                                    height="24"
+                                                    class="sc-bRBYWo ccSRck"
+                                                    style="
+                                                      background-color: rgb(
+                                                        30,
+                                                        30,
+                                                        32
+                                                      );
+                                                      max-width: 135px;
+                                                      display: block;
+                                                    "
+                                                /></a>
+                                              </td>
+                                              <td width="5"><div></div></td>
+                                              <td v-if="generatorStore.twitter">
+                                                <a
+                                                  :href="
+                                                    '//' +
+                                                    generatorStore.twitter
+                                                  "
+                                                  color="#1e1e20"
+                                                  class="sc-hzDkRC kpsoyz"
+                                                  style="
+                                                    display: inline-block;
+                                                    padding: 0px;
+                                                  "
+                                                  :style="
+                                                    'background-color:' +
+                                                    generatorStore.link_color
+                                                  "
+                                                  ><img
+                                                    src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/twitter-icon-2x.png"
+                                                    alt="twitter"
+                                                    color="#1e1e20"
+                                                    height="24"
+                                                    class="sc-bRBYWo ccSRck"
+                                                    style="
+                                                      background-color: rgb(
+                                                        30,
+                                                        30,
+                                                        32
+                                                      );
+                                                      max-width: 135px;
+                                                      display: block;
+                                                    "
+                                                /></a>
+                                              </td>
+                                              <td width="5"><div></div></td>
+                                              <td
+                                                v-if="generatorStore.linkedin"
+                                              >
+                                                <a
+                                                  :href="
+                                                    '//' +
+                                                    generatorStore.linkedin
+                                                  "
+                                                  color="#1e1e20"
+                                                  class="sc-hzDkRC kpsoyz"
+                                                  style="
+                                                    display: inline-block;
+                                                    padding: 0px;
+                                                  "
+                                                  :style="
+                                                    'background-color:' +
+                                                    generatorStore.link_color
+                                                  "
+                                                  ><img
+                                                    src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/linkedin-icon-2x.png"
+                                                    alt="linkedin"
+                                                    color="#1e1e20"
+                                                    height="24"
+                                                    class="sc-bRBYWo ccSRck"
+                                                    style="
+                                                      background-color: rgb(
+                                                        30,
+                                                        30,
+                                                        32
+                                                      );
+                                                      max-width: 135px;
+                                                      display: block;
+                                                    "
+                                                /></a>
+                                              </td>
+                                              <td width="5"><div></div></td>
+                                              <td
+                                                v-if="generatorStore.instagram"
+                                              >
+                                                <a
+                                                  :href="
+                                                    '//' +
+                                                    generatorStore.instagram
+                                                  "
+                                                  color="#1e1e20"
+                                                  class="sc-hzDkRC kpsoyz"
+                                                  style="
+                                                    display: inline-block;
+                                                    padding: 0px;
+                                                  "
+                                                  :style="
+                                                    'background-color:' +
+                                                    generatorStore.link_color
+                                                  "
+                                                  ><img
+                                                    src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/instagram-icon-2x.png"
+                                                    alt="instagram"
+                                                    color="#1e1e20"
+                                                    height="24"
+                                                    class="sc-bRBYWo ccSRck"
+                                                    style="
+                                                      background-color: rgb(
+                                                        30,
+                                                        30,
+                                                        32
+                                                      );
+                                                      max-width: 135px;
+                                                      display: block;
+                                                    "
+                                                /></a>
+                                              </td>
+                                              <td width="5"><div></div></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                              <td width="46"><div></div></td>
+                              <td style="padding: 0px; vertical-align: middle">
+                                <h3
+                                  v-if="
+                                    generatorStore.first_name ||
+                                    generatorStore.last_name
+                                  "
+                                  color="#000000"
+                                  class="sc-fBuWsC eeihxG"
+                                  style="
+                                    margin: 0px;
+                                    font-size: 16px;
+                                    color: rgb(0, 0, 0);
+                                  "
+                                >
+                                  <span v-if="generatorStore.first_name">{{
+                                    generatorStore.first_name
+                                  }}</span
+                                  ><span>&nbsp;</span
+                                  ><span v-if="generatorStore.last_name">{{
+                                    generatorStore.last_name
+                                  }}</span>
+                                </h3>
+                                <p
+                                  v-if="generatorStore.job_title"
+                                  color="#000000"
+                                  font-size="small"
+                                  class="sc-fMiknA bxZCMx"
+                                  style="
+                                    margin: 0px;
+                                    color: rgb(0, 0, 0);
+                                    font-size: 12px;
+                                    line-height: 20px;
+                                  "
+                                >
+                                  <span>{{ generatorStore.job_title }}</span>
+                                </p>
+                                <p
+                                  v-if="
+                                    generatorStore.department ||
+                                    generatorStore.company_name
+                                  "
+                                  color="#000000"
+                                  font-size="small"
+                                  class="sc-dVhcbM fghLuF"
+                                  style="
+                                    margin: 0px;
+                                    font-weight: 500;
+                                    color: rgb(0, 0, 0);
+                                    font-size: 12px;
+                                    line-height: 20px;
+                                  "
+                                >
+                                  <span v-if="generatorStore.department">{{
+                                    generatorStore.department
+                                  }}</span
+                                  ><span>&nbsp;|&nbsp;</span
+                                  ><span v-if="generatorStore.company_name">{{
+                                    generatorStore.company_name
+                                  }}</span>
+                                </p>
+                                <table
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  class="sc-gPEVay eQYmiW"
+                                  style="
+                                    vertical-align: -webkit-baseline-middle;
+                                    width: 100%;
+                                  "
+                                  :style="
+                                    'font-size:' +
+                                    generatorStore.font_size +
+                                    ';' +
+                                    'font-family: ' +
+                                    generatorStore.font_family +
+                                    ';'
+                                  "
+                                >
+                                  <tbody>
+                                    <tr>
+                                      <td height="30"></td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        color="#dd1515"
+                                        direction="horizontal"
+                                        height="1"
+                                        class="sc-jhAzac hmXDXQ"
+                                        style="
+                                          width: 100%;
+                                          border-left: none;
+                                          display: block;
+                                        "
+                                        :style="
+                                          'border-bottom: 1px solid ' +
+                                          generatorStore.theme_color
+                                        "
+                                      ></td>
+                                    </tr>
+                                    <tr>
+                                      <td height="30"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  class="sc-gPEVay eQYmiW"
+                                  style="
+                                    vertical-align: -webkit-baseline-middle;
+                                  "
+                                  :style="
+                                    'font-size:' +
+                                    generatorStore.font_size +
+                                    ';' +
+                                    'font-family: ' +
+                                    generatorStore.font_family +
+                                    ';'
+                                  "
+                                >
+                                  <tbody>
+                                    <tr
+                                      height="25"
+                                      style="vertical-align: middle"
+                                    >
+                                      <td
+                                        width="30"
+                                        style="vertical-align: middle"
+                                      >
+                                        <table
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          class="sc-gPEVay eQYmiW"
+                                          style="
+                                            vertical-align: -webkit-baseline-middle;
+                                          "
+                                          :style="
+                                            'font-size:' +
+                                            generatorStore.font_size +
+                                            ';' +
+                                            'font-family: ' +
+                                            generatorStore.font_family +
+                                            ';'
+                                          "
+                                        >
+                                          <tbody
+                                            v-if="
+                                              generatorStore.office_phone ||
+                                              generatorStore.mobile_phone
+                                            "
+                                          >
+                                            <tr>
+                                              <td
+                                                style="vertical-align: bottom"
+                                              >
+                                                <span
+                                                  color="#dd1515"
+                                                  width="11"
+                                                  class="sc-jlyJG bbyJzT"
+                                                  style="display: block"
+                                                  :style="
+                                                    'background-color: ' +
+                                                    generatorStore.theme_color
+                                                  "
+                                                  ><img
+                                                    src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/phone-icon-2x.png"
+                                                    color="#dd1515"
+                                                    width="13"
+                                                    class="sc-iRbamj blSEcj"
+                                                    style="display: block"
+                                                    :style="
+                                                      'background-color: ' +
+                                                      generatorStore.theme_color
+                                                    "
+                                                /></span>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                      <td
+                                        v-if="
+                                          generatorStore.office_phone ||
+                                          generatorStore.mobile_phone
+                                        "
+                                        style="
+                                          padding: 0px;
+                                          color: rgb(0, 0, 0);
+                                        "
+                                      >
+                                        <a
+                                          v-if="generatorStore.office_phone"
+                                          :href="
+                                            'tel:' + generatorStore.office_phone
+                                          "
+                                          color="#000000"
+                                          class="sc-gipzik iyhjGb"
+                                          style="
+                                            text-decoration: none;
+                                            color: rgb(0, 0, 0);
+                                            font-size: 12px;
+                                          "
+                                          ><span>{{
+                                            generatorStore.office_phone
+                                          }}</span></a
+                                        >
+                                        |
+                                        <a
+                                          v-if="generatorStore.mobile_phone"
+                                          :href="
+                                            'tel:' + generatorStore.mobile_phone
+                                          "
+                                          color="#000000"
+                                          class="sc-gipzik iyhjGb"
+                                          style="
+                                            text-decoration: none;
+                                            color: rgb(0, 0, 0);
+                                            font-size: 12px;
+                                          "
+                                          ><span>{{
+                                            generatorStore.mobile_phone
+                                          }}</span></a
+                                        >
+                                      </td>
+                                    </tr>
+                                    <tr
+                                      height="25"
+                                      style="vertical-align: middle"
+                                    >
+                                      <td
+                                        width="30"
+                                        style="vertical-align: middle"
+                                      >
+                                        <table
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          class="sc-gPEVay eQYmiW"
+                                          style="
+                                            vertical-align: -webkit-baseline-middle;
+                                          "
+                                          :style="
+                                            'font-size:' +
+                                            generatorStore.font_size +
+                                            ';' +
+                                            'font-family: ' +
+                                            generatorStore.font_family +
+                                            ';'
+                                          "
+                                        >
+                                          <tbody v-if="generatorStore.email">
+                                            <tr>
+                                              <td
+                                                style="vertical-align: bottom"
+                                              >
+                                                <span
+                                                  color="#dd1515"
+                                                  width="11"
+                                                  class="sc-jlyJG bbyJzT"
+                                                  style="display: block"
+                                                  :style="
+                                                    'background-color:' +
+                                                    generatorStore.theme_color
+                                                  "
+                                                  ><img
+                                                    src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/email-icon-2x.png"
+                                                    color="#dd1515"
+                                                    width="13"
+                                                    class="sc-iRbamj blSEcj"
+                                                    style="display: block"
+                                                    :style="
+                                                      'background-color:' +
+                                                      generatorStore.theme_color
+                                                    "
+                                                /></span>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                      <td style="padding: 0px">
+                                        <a
+                                          v-if="generatorStore.email"
+                                          :href="
+                                            'mailto:' + generatorStore.email
+                                          "
+                                          color="#000000"
+                                          class="sc-gipzik iyhjGb"
+                                          style="
+                                            text-decoration: none;
+                                            color: rgb(0, 0, 0);
+                                            font-size: 12px;
+                                          "
+                                          ><span>{{
+                                            generatorStore.email
+                                          }}</span></a
+                                        >
+                                      </td>
+                                    </tr>
+                                    <tr
+                                      height="25"
+                                      style="vertical-align: middle"
+                                    >
+                                      <td
+                                        width="30"
+                                        style="vertical-align: middle"
+                                      >
+                                        <table
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          class="sc-gPEVay eQYmiW"
+                                          style="
+                                            vertical-align: -webkit-baseline-middle;
+                                          "
+                                          :style="
+                                            'font-size:' +
+                                            generatorStore.font_size +
+                                            ';' +
+                                            'font-family: ' +
+                                            generatorStore.font_family +
+                                            ';'
+                                          "
+                                        >
+                                          <tbody
+                                            v-if="generatorStore.website_url"
+                                          >
+                                            <tr>
+                                              <td
+                                                style="vertical-align: bottom"
+                                              >
+                                                <span
+                                                  color="#dd1515"
+                                                  width="11"
+                                                  class="sc-jlyJG bbyJzT"
+                                                  style="display: block"
+                                                  :style="
+                                                    'background-color:' +
+                                                    generatorStore.theme_color
+                                                  "
+                                                  ><img
+                                                    src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/link-icon-2x.png"
+                                                    color="#dd1515"
+                                                    width="13"
+                                                    class="sc-iRbamj blSEcj"
+                                                    style="display: block"
+                                                    :style="
+                                                      'background-color:' +
+                                                      generatorStore.theme_color
+                                                    "
+                                                /></span>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                      <td
+                                        style="padding: 0px"
+                                        v-if="generatorStore.website_url"
+                                      >
+                                        <a
+                                          :href="
+                                            '//' + generatorStore.website_url
+                                          "
+                                          color="#000000"
+                                          class="sc-gipzik iyhjGb"
+                                          style="
+                                            text-decoration: none;
+                                            color: rgb(0, 0, 0);
+                                            font-size: 12px;
+                                          "
+                                          ><span>{{
+                                            generatorStore.website_url
+                                          }}</span></a
+                                        >
+                                      </td>
+                                    </tr>
+                                    <tr
+                                      height="25"
+                                      style="vertical-align: middle"
+                                    >
+                                      <td
+                                        width="30"
+                                        style="vertical-align: middle"
+                                      >
+                                        <table
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          class="sc-gPEVay eQYmiW"
+                                          style="
+                                            vertical-align: -webkit-baseline-middle;
+                                          "
+                                          :style="
+                                            'font-size:' +
+                                            generatorStore.font_size +
+                                            ';' +
+                                            'font-family: ' +
+                                            generatorStore.font_family +
+                                            ';'
+                                          "
+                                        >
+                                          <tbody
+                                            v-if="
+                                              generatorStore.address_1 ||
+                                              generatorStore.address_2 ||
+                                              generatorStore.address_3 ||
+                                              generatorStore.address_4
+                                            "
+                                          >
+                                            <tr>
+                                              <td
+                                                style="vertical-align: bottom"
+                                              >
+                                                <span
+                                                  color="#dd1515"
+                                                  width="11"
+                                                  class="sc-jlyJG bbyJzT"
+                                                  style="display: block"
+                                                  :style="
+                                                    'background-color:' +
+                                                    generatorStore.theme_color
+                                                  "
+                                                  ><img
+                                                    src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/address-icon-2x.png"
+                                                    color="#dd1515"
+                                                    width="13"
+                                                    class="sc-iRbamj blSEcj"
+                                                    style="display: block"
+                                                    :style="
+                                                      'background-color:' +
+                                                      generatorStore.theme_color
+                                                    "
+                                                /></span>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                      <td
+                                        style="padding: 0px"
+                                        v-if="
+                                          generatorStore.address_1 ||
+                                          generatorStore.address_2 ||
+                                          generatorStore.address_3 ||
+                                          generatorStore.address_4
+                                        "
+                                      >
+                                        <span
+                                          color="#000000"
+                                          class="sc-csuQGl CQhxV"
+                                          style="
+                                            font-size: 12px;
+                                            color: rgb(0, 0, 0);
+                                          "
+                                          ><span
+                                            v-if="generatorStore.address_1"
+                                          >
+                                            {{ generatorStore.address_1 }}</span
+                                          ><span
+                                            v-if="generatorStore.address_2"
+                                            >{{
+                                              ", " + generatorStore.address_2
+                                            }}</span
+                                          ><span
+                                            v-if="generatorStore.address_3"
+                                            >{{
+                                              ", " + generatorStore.address_3
+                                            }}</span
+                                          ><span
+                                            v-if="generatorStore.address_4"
+                                            >{{
+                                              ", " + generatorStore.address_4
+                                            }}</span
+                                          ></span
+                                        >
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  class="sc-gPEVay eQYmiW"
+                                  style="
+                                    vertical-align: -webkit-baseline-middle;
+                                  "
+                                  :style="
+                                    'font-size:' +
+                                    generatorStore.font_size +
+                                    ';' +
+                                    'font-family: ' +
+                                    generatorStore.font_family +
+                                    ';'
+                                  "
+                                >
+                                  <tbody>
+                                    <tr>
+                                      <td height="30"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <span style="display: block; text-align: left"
+                                  ><a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="//sdfsdfs"
+                                    color="#6a78d1"
+                                    class="sc-fAjcbJ byigni"
+                                    style="
+                                      border-width: 6px 12px;
+                                      border-style: solid;
+                                      border-color: rgb(106, 120, 209);
+                                      display: inline-block;
+                                      background-color: rgb(106, 120, 209);
+                                      color: rgb(255, 255, 255);
+                                      font-weight: 700;
+                                      text-decoration: none;
+                                      text-align: center;
+                                      line-height: 40px;
+                                      font-size: 12px;
+                                      border-radius: 3px;
+                                    "
+                                    >sdfsdfsfd</a
+                                  ></span
+                                >
+                                <table
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  class="sc-gPEVay eQYmiW"
+                                  style="
+                                    vertical-align: -webkit-baseline-middle;
+                                  "
+                                  :style="
+                                    'font-size:' +
+                                    generatorStore.font_size +
+                                    ';' +
+                                    'font-family: ' +
+                                    generatorStore.font_family +
+                                    ';'
+                                  "
+                                >
+                                  <tbody>
+                                    <tr>
+                                      <td height="30"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
@@ -78,5 +861,11 @@
 </template>
 
 <script>
-export default {};
+import { mapStores } from "pinia";
+import { useGeneratorStore } from "../store";
+export default {
+  computed: {
+    ...mapStores(useGeneratorStore),
+  },
+};
 </script>

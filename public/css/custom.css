@@ -1,3 +1,26 @@
+::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #999;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #999;
+    opacity: 1; /* Firefox */
+  }
+  
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #999;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #999;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #999;
+  }
+
 div {
     box-sizing: border-box;
 }
@@ -130,6 +153,12 @@ div {
     padding: 2rem 0px;
 }
 
+.content .content-body .content-body-logo .content-body-logo-container a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
 .content .content-body .content-body-logo .content-body-logo-container img.logo {
     margin: 0px auto;
     width: 10rem;
@@ -236,4 +265,84 @@ div {
     display: inline-block;
     margin-right: 0.75rem;
     line-height: 1rem;
+}
+
+.sidebar .sidebar-body .page .title-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 1.875rem 3.75rem 0.9rem;
+}
+
+.sidebar .sidebar-body .page .title-wrapper .title {
+    width: 100%;
+    padding-top: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.sidebar .sidebar-body .page .input-container {
+    width: 100%;
+    height: auto;
+    padding: 1.875rem 3.75rem;
+}
+
+.sidebar .sidebar-body .page .input-container .input-block {
+    position: relative;
+}
+
+.sidebar .sidebar-body .page .input-container .input-block .input-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .sidebar-body .page .input-container .input-block .input-wrapper .input-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.sidebar .sidebar-body .page .input-container .input-block .input-wrapper .input-field {
+    background: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    -o-border-image: initial;
+       border-image: initial;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.5rem 0px;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.divider {
+    position: relative;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider .divider-line {
+    width: 100%;
+    height: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.2;
+}
+
+.divider .divider-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(51, 71, 91);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

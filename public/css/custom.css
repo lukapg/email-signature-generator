@@ -25,11 +25,15 @@ div {
     box-sizing: border-box;
 }
 
+.mb-1 {
+    margin-bottom: 0.5rem;
+}
+
 .wrapper-container {
     height: 100vh;
     width: 100vw;
     padding-left: 25%;
-    background: linear-gradient(-45deg, rgb(106, 120, 209), rgb(0, 164, 189));
+    background: #77ABB7;
     transition: padding 0.5s ease 0s;
     position: relative;
 }
@@ -43,7 +47,7 @@ div {
     max-width: 400px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(51, 71, 91);
+    background-color: #254B62;
     will-change: transform;
     transform: translateX(0px);
 }
@@ -53,7 +57,7 @@ div {
     width: 100%;
     display: flex;
     flex-direction: row;
-    background-color: rgb(66, 91, 118);
+    background-color: #476D7C;
 }
 
 .sidebar .sidebar-body {
@@ -70,14 +74,14 @@ div {
     width: 25%;
     transform: translateX(0%);
     transition: transform 0.3s ease-in-out 0s;
-    background-color: rgb(51, 71, 91);
+    background-color: #254B62;
 }
 
 .sidebar .sidebar-header .tab {
     width: 100%;
     height: 5rem;
-    border-right: 1px solid rgb(51, 71, 91);
-    border-bottom: 1px solid rgb(51, 71, 91);
+    border-right: 1px solid #254B62;
+    border-bottom: 1px solid #254B62;
     z-index: 1;
     cursor: pointer;
     flex-direction: row;
@@ -99,7 +103,7 @@ div {
     width: 25%;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out 0s;
-    background-color: rgb(51, 71, 91);
+    background-color: #254B62;
 }
 
 .sidebar .sidebar-header .tab-active.stylize {
@@ -110,7 +114,7 @@ div {
     width: 25%;
     transform: translateX(200%);
     transition: transform 0.3s ease-in-out 0s;
-    background-color: rgb(51, 71, 91);
+    background-color: #254B62;
 }
 
 .sidebar .sidebar-header .tab-active.images {
@@ -121,7 +125,7 @@ div {
     width: 25%;
     transform: translateX(300%);
     transition: transform 0.3s ease-in-out 0s;
-    background-color: rgb(51, 71, 91);
+    background-color: #254B62;
 }
 
 .content {
@@ -153,10 +157,33 @@ div {
     padding: 2rem 0px;
 }
 
-.content .content-body .content-body-logo .content-body-logo-container a {
+.content .content-body .content-body-logo .content-body-logo-container .action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .content-body .content-body-logo .content-body-logo-container a.action-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background-color: #254B62;
+}
+
+.content .content-body .content-body-logo .content-body-logo-container a.action-btn.source {
+    margin-left: 1rem;
+}
+
+.content .content-body .content-body-logo .content-body-logo-container a.logo {
     font-size: 24px;
     font-weight: 700;
-    color: #fff;
+    color: #254B62;
 }
 
 .content .content-body .content-body-logo .content-body-logo-container img.logo {
@@ -166,6 +193,7 @@ div {
 
 .content .content-body .content-body-preview {
     width: 80%;
+    margin-bottom: 3rem;
 }
 
 .content .content-body .content-body-preview .content-body-preview-container {
@@ -178,7 +206,7 @@ div {
     display: flex;
     flex-direction: row;
     padding: 1rem;
-    background-color: rgb(51, 71, 91);
+    background-color: #254B62;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px 8px 0px 0px;
 }
@@ -203,7 +231,7 @@ div {
 }
 
 .content .content-body .content-body-preview .content-body-preview-container .preview-title {
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 1rem 2rem;
     font-size: 0.875rem;
@@ -298,23 +326,23 @@ div {
 }
 
 .sidebar .sidebar-body .page .input-container .input-block .input-wrapper .input-label {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     color: rgb(255, 255, 255);
+    margin-bottom: 0.5rem;
 }
 
 .sidebar .sidebar-body .page .input-container .input-block .input-wrapper .input-field {
-    background: none;
+    background: #fff;
     border-top: none;
     border-right: none;
     border-left: none;
     -o-border-image: initial;
-       border-image: initial;
+    border-image: initial;
     outline: none;
     font-size: 1rem;
-    padding: 0.5rem 0px;
-    color: rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
 }
 
 .divider {
@@ -328,7 +356,7 @@ div {
 .divider .divider-line {
     width: 100%;
     height: 0.2rem;
-    background-color: rgb(255, 255, 255);
+    background-color: #CE9461;
     opacity: 0.2;
 }
 

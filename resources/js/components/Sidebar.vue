@@ -171,21 +171,21 @@
                 name=""
                 type="text"
                 placeholder="Address Line 1"
-                class="input-field"
+                class="input-field mb-1"
                 v-model="generatorStore.address_1"
               />
               <input
                 name=""
                 type="text"
                 placeholder="Address Line 2"
-                class="input-field"
+                class="input-field mb-1"
                 v-model="generatorStore.address_2"
               />
               <input
                 name=""
                 type="text"
                 placeholder="Address Line 3"
-                class="input-field"
+                class="input-field mb-1"
                 v-model="generatorStore.address_3"
               />
               <input
@@ -341,7 +341,7 @@
                 type="text"
                 placeholder="https://example.com/images/myphoto.jpg"
                 class="input-field"
-                value=""
+                v-model="generatorStore.profile_picture"
               />
             </span>
           </div>
@@ -355,7 +355,7 @@
                 type="text"
                 placeholder="https://example.com/images/myphoto.jpg"
                 class="input-field"
-                value=""
+                v-model="generatorStore.company_logo"
               />
             </span>
           </div>
@@ -372,7 +372,7 @@
                 type="text"
                 placeholder="Find Out More"
                 class="input-field"
-                value=""
+                v-model="generatorStore.custom_cta_copy"
               />
             </span>
           </div>
@@ -386,7 +386,7 @@
                 type="text"
                 placeholder="www.hubspot.com"
                 class="input-field"
-                value=""
+                v-model="generatorStore.custom_cta_url"
               />
             </span>
           </div>
@@ -395,7 +395,7 @@
           <div class="input-block">
             <span class="input-wrapper"
               ><span class="input-label">Select CTA Color</span
-              ><input name="" type="color" value="" />
+              ><input name="" type="color" v-model="generatorStore.cta_color" />
             </span>
           </div>
         </div>
@@ -403,7 +403,11 @@
           <div class="input-block">
             <span class="input-wrapper"
               ><span class="input-label">Select CTA Text color</span
-              ><input name="" type="color" value="" />
+              ><input
+                name=""
+                type="color"
+                v-model="generatorStore.cta_text_color"
+              />
             </span>
           </div>
         </div>
@@ -422,21 +426,7 @@
                 type="text"
                 placeholder="https://example.com/images/myphoto.jpg"
                 class="input-field"
-                value=""
-              />
-            </span>
-          </div>
-        </div>
-        <div id="customCTAImage" class="input-container">
-          <div class="input-block">
-            <span class="input-wrapper"
-              ><span class="input-label">Custom CTA URL</span
-              ><input
-                name=""
-                type="text"
-                placeholder="www.hubspot.com"
-                class="input-field"
-                value=""
+                v-model="generatorStore.custom_cta_image"
               />
             </span>
           </div>

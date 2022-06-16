@@ -29,8 +29,8 @@ export const useGeneratorStore = defineStore("generator", {
             company_logo: "",
             custom_cta_copy: "",
             custom_cta_url: "",
-            cta_color: "",
-            cta_text_color: "",
+            cta_color: "#000",
+            cta_text_color: "#fff",
             custom_cta_image: "",
         };
     },

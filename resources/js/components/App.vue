@@ -1,6 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="wrapper-container">
+      <notifications />
       <sidebar />
       <preview />
     </div>

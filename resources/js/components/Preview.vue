@@ -7,16 +7,21 @@
             href="//www.hubspot.com/resources/tool"
             target="_blank"
             rel="noopener noreferrer"
+            class="logo"
             >E-mail signature generator</a
           >
+          <div class="action">
+            <a href="#" class="action-btn" @click="copy">Copy signature</a>
+            <a href="#" class="action-btn source" @click="copySourceCode"
+              >Copy signature source code</a
+            >
+          </div>
         </div>
       </div>
       <div class="content-body-preview">
         <div class="content-body-preview-container">
           <div class="preview-header">
-            <div class="header-dot"></div>
-            <div class="header-dot"></div>
-            <div class="header-dot"></div>
+            <h3 style="margin: 0; color: #fff">Signature preview</h3>
           </div>
           <div class="preview-title">
             <span>To: <strong>Your Recipient</strong></span>
@@ -26,7 +31,7 @@
           </div>
           <div>
             <div class="preview-main">
-              <div class="signature-wrapper">
+              <div class="signature-wrapper" id="signature">
                 <table
                   cellpadding="0"
                   cellspacing="0"
@@ -66,7 +71,9 @@
                                   generatorStore.linkedin ||
                                   generatorStore.twitter ||
                                   generatorStore.instagram ||
-                                  generatorStore.facebook
+                                  generatorStore.facebook ||
+                                  generatorStore.profile_picture ||
+                                  generatorStore.company_logo
                                 "
                               >
                                 <table
@@ -86,7 +93,44 @@
                                   "
                                 >
                                   <tbody>
-                                    <tr>
+                                    <tr v-if="generatorStore.profile_picture">
+                                      <td
+                                        class="sc-TOsTZ kjYrri"
+                                        style="text-align: center"
+                                      >
+                                        <img
+                                          :src="generatorStore.profile_picture"
+                                          role="presentation"
+                                          width="130"
+                                          class="sc-cHGsZl bHiaRe"
+                                          style="
+                                            max-width: 128px;
+                                            display: block;
+                                          "
+                                        />
+                                      </td>
+                                    </tr>
+                                    <tr v-if="generatorStore.profile_picture">
+                                      <td height="30"></td>
+                                    </tr>
+                                    <tr v-if="generatorStore.company_logo">
+                                      <td
+                                        class="sc-TOsTZ kjYrri"
+                                        style="text-align: center"
+                                      >
+                                        <img
+                                          :src="generatorStore.company_logo"
+                                          role="presentation"
+                                          width="130"
+                                          class="sc-cHGsZl bHiaRe"
+                                          style="
+                                            max-width: 130px;
+                                            display: block;
+                                          "
+                                        />
+                                      </td>
+                                    </tr>
+                                    <tr v-if="generatorStore.company_logo">
                                       <td height="30"></td>
                                     </tr>
                                     <tr>
@@ -758,20 +802,22 @@
                                     </tr>
                                   </tbody>
                                 </table>
-                                <span style="display: block; text-align: left"
+                                <span
+                                  style="display: block; text-align: left"
+                                  v-if="
+                                    !generatorStore.custom_cta_image &&
+                                    (generatorStore.custom_cta_url ||
+                                      generatorStore.custom_cta_copy)
+                                  "
                                   ><a
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    href="//sdfsdfs"
-                                    color="#6a78d1"
+                                    :href="'//' + generatorStore.custom_cta_url"
                                     class="sc-fAjcbJ byigni"
                                     style="
                                       border-width: 6px 12px;
                                       border-style: solid;
-                                      border-color: rgb(106, 120, 209);
                                       display: inline-block;
-                                      background-color: rgb(106, 120, 209);
-                                      color: rgb(255, 255, 255);
                                       font-weight: 700;
                                       text-decoration: none;
                                       text-align: center;
@@ -779,7 +825,15 @@
                                       font-size: 12px;
                                       border-radius: 3px;
                                     "
-                                    >sdfsdfsfd</a
+                                    :style="
+                                      'border-color:' +
+                                      generatorStore.cta_color +
+                                      '; background-color:' +
+                                      generatorStore.cta_color +
+                                      '; color: ' +
+                                      generatorStore.cta_text_color
+                                    "
+                                    >{{ generatorStore.custom_cta_copy }}</a
                                   ></span
                                 >
                                 <table
@@ -810,51 +864,64 @@
                         </table>
                       </td>
                     </tr>
+                    <tr v-if="generatorStore.custom_cta_image">
+                      <td>
+                        <table
+                          cellpadding="0"
+                          cellspacing="0"
+                          class="sc-gPEVay eQYmiW"
+                          style="
+                            vertical-align: -webkit-baseline-middle;
+                            font-size: medium;
+                            font-family: 'Trebuchet MS';
+                          "
+                        >
+                          <tbody>
+                            <tr>
+                              <td height="30"></td>
+                            </tr>
+                            <tr>
+                              <span style="display: block; text-align: left"
+                                ><a
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  :href="generatorStore.custom_cta_url"
+                                  color="#6a78d1"
+                                  class="sc-fAjcbJ byigni"
+                                  style="
+                                    border-width: initial;
+                                    border-style: none;
+                                    border-color: initial;
+                                    display: inline-block;
+                                    background-color: transparent;
+                                    color: rgb(255, 255, 255);
+                                    font-weight: 700;
+                                    text-decoration: none;
+                                    text-align: center;
+                                    line-height: 1;
+                                    font-size: 12px;
+                                    border-radius: 3px;
+                                  "
+                                  ><img
+                                    :src="generatorStore.custom_cta_image"
+                                    role="presentation"
+                                    class="sc-caSCKo jjNSwx"
+                                    style="
+                                      text-decoration: none;
+                                      max-width: 728px;
+                                    " /></a
+                              ></span>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="content-body-footer">
-        <span class="create-signature-btn" rel="noopener noreferrer"
-          >Create signature</span
-        >
-        <span class="clear-input"
-          ><div class="clear-input-icon">
-            <span class="isvg loaded"
-              ><!--?xml version="1.0" encoding="utf-8"?-->
-              <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-              <svg
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 10 12"
-                enable-background="new 0 0 10 12"
-                xml:space="preserve"
-              >
-                <title>Icons/Actions/Rotate</title>
-                <desc>Created with Sketch.</desc>
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  fill=""
-                  d="M8.33367,6.90972c0,1.87132-1.49523,3.39345-3.33388,3.39345
-	c-1.83824,0-3.33347-1.52214-3.33347-3.39345S3.16156,3.51627,4.9998,3.51627v1.37421c0,0.11417,0.04298,0.22751,0.12812,0.31459
-	c0.17068,0.17376,0.44697,0.17376,0.61766,0l2.18411-2.22299c0.17028-0.17376,0.17028-0.45502,0-0.62877L5.74557,0.13032
-	c-0.17068-0.17376-0.44697-0.17376-0.61766,0C5.0395,0.2199,4.99898,0.33866,5.00225,0.45616L4.9998,0.9741v0.83295
-	C2.24264,1.81913,0,4.10295,0,6.90972s2.24264,5.09018,4.9998,5.09018C7.75736,11.9999,10,9.71648,10,6.90972
-	c0-0.46877-0.37248-0.84836-0.83296-0.84836C8.70615,6.06136,8.33367,6.44095,8.33367,6.90972z"
-                ></path>
-              </svg>
-            </span>
-          </div>
-          Clear all input fields</span
-        >
       </div>
     </div>
   </div>
@@ -866,6 +933,67 @@ import { useGeneratorStore } from "../store";
 export default {
   computed: {
     ...mapStores(useGeneratorStore),
+  },
+  methods: {
+    validateEmail(email) {
+      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+        return false;
+      } else {
+        return true;
+      }
+    },
+    validateUrl(url) {
+      if (/^(http|https):\/\/[w\d]+\.[\w](\/[\w\d]+)?$/.test(url)) {
+        return false;
+      } else {
+        return true;
+      }
+    },
+    copySourceCode() {
+      if (
+        this.generatorStore.first_name == "" ||
+        this.generatorStore.first_name == null
+      ) {
+        this.$notify({ text: "Please enter your first name!", type: "error" });
+        return;
+      }
+      if (this.validateEmail(this.generatorStore.email)) {
+        this.$notify({
+          text: "Please enter a valid e-mail address!",
+          type: "error",
+        });
+        return;
+      }
+      let html = document.getElementById("signature").innerHTML;
+      navigator.clipboard.writeText(html);
+      this.$notify({ text: "Copied!", type: "success" });
+    },
+    copy() {
+      if (
+        this.generatorStore.first_name == "" ||
+        this.generatorStore.first_name == null
+      ) {
+        this.$notify({ text: "Please enter your first name!", type: "error" });
+        return;
+      }
+      if (this.validateEmail(this.generatorStore.email)) {
+        this.$notify({
+          text: "Please enter a valid e-mail address!",
+          type: "error",
+        });
+        return;
+      }
+      const div = document.getElementById("signature");
+      let result = "";
+      for (const child of div.childNodes) {
+        if (child.innerText != "" || child.innerText != null) {
+          result += child.innerText;
+        }
+      }
+      result = result.replace(/\t/g, "");
+      navigator.clipboard.writeText(result);
+      this.$notify({ text: "Copied!", type: "success" });
+    },
   },
 };
 </script>

@@ -32,6 +32,8 @@ Vue.component("preview", require("./components/Preview.vue").default);
 import { createPinia, PiniaVuePlugin } from "pinia";
 Vue.use(PiniaVuePlugin);
 const pinia = createPinia();
+import Notifications from "vue-notification";
+Vue.use(Notifications);
 
 const app = new Vue({
     el: "#app",

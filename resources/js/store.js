@@ -3,6 +3,7 @@ import { defineStore } from "pinia";
 export const useGeneratorStore = defineStore("generator", {
     state: () => {
         return {
+            template: "template_1",
             first_name: "",
             last_name: "",
             job_title: "",

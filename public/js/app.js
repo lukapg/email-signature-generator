@@ -5557,8 +5557,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var pinia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! pinia */ "./node_modules/pinia/dist/pinia.esm-browser.js");
+/* harmony import */ var pinia__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! pinia */ "./node_modules/pinia/dist/pinia.esm-browser.js");
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../store */ "./resources/js/store.js");
+/* harmony import */ var _template_Template1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./template/Template1 */ "./resources/js/components/template/Template1.vue");
+/* harmony import */ var _template_Template2_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./template/Template2.vue */ "./resources/js/components/template/Template2.vue");
 function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
@@ -5616,894 +5618,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
+
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  computed: _objectSpread({}, (0,pinia__WEBPACK_IMPORTED_MODULE_1__.mapStores)(_store__WEBPACK_IMPORTED_MODULE_0__.useGeneratorStore)),
+  components: {
+    Template1: _template_Template1__WEBPACK_IMPORTED_MODULE_1__["default"],
+    Template2: _template_Template2_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
+  },
+  computed: _objectSpread({}, (0,pinia__WEBPACK_IMPORTED_MODULE_3__.mapStores)(_store__WEBPACK_IMPORTED_MODULE_0__.useGeneratorStore)),
   methods: {
     validateEmail: function validateEmail(email) {
       if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
@@ -7049,6 +6173,21 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -7062,6 +6201,1439 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       this.tab = tab;
     }
   },
+  computed: _objectSpread({}, (0,pinia__WEBPACK_IMPORTED_MODULE_1__.mapStores)(_store__WEBPACK_IMPORTED_MODULE_0__.useGeneratorStore))
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/template/Template1.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/template/Template1.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var pinia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! pinia */ "./node_modules/pinia/dist/pinia.esm-browser.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../store */ "./resources/js/store.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  computed: _objectSpread({}, (0,pinia__WEBPACK_IMPORTED_MODULE_1__.mapStores)(_store__WEBPACK_IMPORTED_MODULE_0__.useGeneratorStore))
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/template/Template2.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/template/Template2.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var pinia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! pinia */ "./node_modules/pinia/dist/pinia.esm-browser.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../store */ "./resources/js/store.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   computed: _objectSpread({}, (0,pinia__WEBPACK_IMPORTED_MODULE_1__.mapStores)(_store__WEBPACK_IMPORTED_MODULE_0__.useGeneratorStore))
 });
 
@@ -7169,6 +7741,7 @@ __webpack_require__.r(__webpack_exports__);
 var useGeneratorStore = (0,pinia__WEBPACK_IMPORTED_MODULE_0__.defineStore)("generator", {
   state: function state() {
     return {
+      template: "template_1",
       first_name: "",
       last_name: "",
       job_title: "",
@@ -31745,6 +32318,84 @@ component.options.__file = "resources/js/components/Sidebar.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/template/Template1.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/components/template/Template1.vue ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Template1_vue_vue_type_template_id_ae615fe6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Template1.vue?vue&type=template&id=ae615fe6& */ "./resources/js/components/template/Template1.vue?vue&type=template&id=ae615fe6&");
+/* harmony import */ var _Template1_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Template1.vue?vue&type=script&lang=js& */ "./resources/js/components/template/Template1.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Template1_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Template1_vue_vue_type_template_id_ae615fe6___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Template1_vue_vue_type_template_id_ae615fe6___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/template/Template1.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/template/Template2.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/components/template/Template2.vue ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Template2_vue_vue_type_template_id_ae4530e4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Template2.vue?vue&type=template&id=ae4530e4& */ "./resources/js/components/template/Template2.vue?vue&type=template&id=ae4530e4&");
+/* harmony import */ var _Template2_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Template2.vue?vue&type=script&lang=js& */ "./resources/js/components/template/Template2.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Template2_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Template2_vue_vue_type_template_id_ae4530e4___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Template2_vue_vue_type_template_id_ae4530e4___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/template/Template2.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/App.vue?vue&type=script&lang=js&":
 /*!******************************************************************!*\
   !*** ./resources/js/components/App.vue?vue&type=script&lang=js& ***!
@@ -31790,6 +32441,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Sidebar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Sidebar.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Sidebar.vue?vue&type=script&lang=js&");
  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Sidebar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/template/Template1.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/template/Template1.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Template1_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Template1.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/template/Template1.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Template1_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/template/Template2.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/template/Template2.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Template2_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Template2.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/template/Template2.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Template2_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -31840,6 +32523,40 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Sidebar_vue_vue_type_template_id_81fbb27e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Sidebar_vue_vue_type_template_id_81fbb27e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Sidebar.vue?vue&type=template&id=81fbb27e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Sidebar.vue?vue&type=template&id=81fbb27e&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/template/Template1.vue?vue&type=template&id=ae615fe6&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/template/Template1.vue?vue&type=template&id=ae615fe6& ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Template1_vue_vue_type_template_id_ae615fe6___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Template1_vue_vue_type_template_id_ae615fe6___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Template1_vue_vue_type_template_id_ae615fe6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Template1.vue?vue&type=template&id=ae615fe6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/template/Template1.vue?vue&type=template&id=ae615fe6&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/template/Template2.vue?vue&type=template&id=ae4530e4&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/template/Template2.vue?vue&type=template&id=ae4530e4& ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Template2_vue_vue_type_template_id_ae4530e4___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Template2_vue_vue_type_template_id_ae4530e4___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Template2_vue_vue_type_template_id_ae4530e4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Template2.vue?vue&type=template&id=ae4530e4& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/template/Template2.vue?vue&type=template&id=ae4530e4&");
 
 
 /***/ }),
@@ -31954,1667 +32671,11 @@ var render = function () {
                   attrs: { id: "signature" },
                 },
                 [
-                  _c(
-                    "table",
-                    {
-                      staticClass: "sc-gPEVay eQYmiW",
-                      staticStyle: {
-                        "vertical-align": "-webkit-baseline-middle",
-                      },
-                      style:
-                        "font-size:" +
-                        _vm.generatorStore.font_size +
-                        ";" +
-                        "font-family: " +
-                        _vm.generatorStore.font_family +
-                        ";",
-                      attrs: { cellpadding: "0", cellspacing: "0" },
-                    },
-                    [
-                      _c("tbody", [
-                        _c("tr", [
-                          _c("td", [
-                            _c(
-                              "table",
-                              {
-                                staticClass: "sc-gPEVay eQYmiW",
-                                staticStyle: {
-                                  "vertical-align": "-webkit-baseline-middle",
-                                },
-                                style:
-                                  "font-size:" +
-                                  _vm.generatorStore.font_size +
-                                  ";" +
-                                  "font-family: " +
-                                  _vm.generatorStore.font_family +
-                                  ";",
-                                attrs: { cellpadding: "0", cellspacing: "0" },
-                              },
-                              [
-                                _c("tbody", [
-                                  _c("tr", [
-                                    _vm.generatorStore.linkedin ||
-                                    _vm.generatorStore.twitter ||
-                                    _vm.generatorStore.instagram ||
-                                    _vm.generatorStore.facebook ||
-                                    _vm.generatorStore.profile_picture ||
-                                    _vm.generatorStore.company_logo
-                                      ? _c(
-                                          "td",
-                                          {
-                                            staticStyle: {
-                                              "vertical-align": "top",
-                                            },
-                                          },
-                                          [
-                                            _c(
-                                              "table",
-                                              {
-                                                staticClass: "sc-gPEVay eQYmiW",
-                                                staticStyle: {
-                                                  "vertical-align":
-                                                    "-webkit-baseline-middle",
-                                                },
-                                                style:
-                                                  "font-size:" +
-                                                  _vm.generatorStore.font_size +
-                                                  ";" +
-                                                  "font-family: " +
-                                                  _vm.generatorStore
-                                                    .font_family +
-                                                  ";",
-                                                attrs: {
-                                                  cellpadding: "0",
-                                                  cellspacing: "0",
-                                                },
-                                              },
-                                              [
-                                                _c("tbody", [
-                                                  _vm.generatorStore
-                                                    .profile_picture
-                                                    ? _c("tr", [
-                                                        _c(
-                                                          "td",
-                                                          {
-                                                            staticClass:
-                                                              "sc-TOsTZ kjYrri",
-                                                            staticStyle: {
-                                                              "text-align":
-                                                                "center",
-                                                            },
-                                                          },
-                                                          [
-                                                            _c("img", {
-                                                              staticClass:
-                                                                "sc-cHGsZl bHiaRe",
-                                                              staticStyle: {
-                                                                "max-width":
-                                                                  "128px",
-                                                                display:
-                                                                  "block",
-                                                              },
-                                                              attrs: {
-                                                                src: _vm
-                                                                  .generatorStore
-                                                                  .profile_picture,
-                                                                role: "presentation",
-                                                                width: "130",
-                                                              },
-                                                            }),
-                                                          ]
-                                                        ),
-                                                      ])
-                                                    : _vm._e(),
-                                                  _vm._v(" "),
-                                                  _vm.generatorStore
-                                                    .profile_picture
-                                                    ? _c("tr", [
-                                                        _c("td", {
-                                                          attrs: {
-                                                            height: "30",
-                                                          },
-                                                        }),
-                                                      ])
-                                                    : _vm._e(),
-                                                  _vm._v(" "),
-                                                  _vm.generatorStore
-                                                    .company_logo
-                                                    ? _c("tr", [
-                                                        _c(
-                                                          "td",
-                                                          {
-                                                            staticClass:
-                                                              "sc-TOsTZ kjYrri",
-                                                            staticStyle: {
-                                                              "text-align":
-                                                                "center",
-                                                            },
-                                                          },
-                                                          [
-                                                            _c("img", {
-                                                              staticClass:
-                                                                "sc-cHGsZl bHiaRe",
-                                                              staticStyle: {
-                                                                "max-width":
-                                                                  "130px",
-                                                                display:
-                                                                  "block",
-                                                              },
-                                                              attrs: {
-                                                                src: _vm
-                                                                  .generatorStore
-                                                                  .company_logo,
-                                                                role: "presentation",
-                                                                width: "130",
-                                                              },
-                                                            }),
-                                                          ]
-                                                        ),
-                                                      ])
-                                                    : _vm._e(),
-                                                  _vm._v(" "),
-                                                  _vm.generatorStore
-                                                    .company_logo
-                                                    ? _c("tr", [
-                                                        _c("td", {
-                                                          attrs: {
-                                                            height: "30",
-                                                          },
-                                                        }),
-                                                      ])
-                                                    : _vm._e(),
-                                                  _vm._v(" "),
-                                                  _c("tr", [
-                                                    _c(
-                                                      "td",
-                                                      {
-                                                        staticStyle: {
-                                                          "text-align":
-                                                            "center",
-                                                        },
-                                                      },
-                                                      [
-                                                        _c(
-                                                          "table",
-                                                          {
-                                                            staticClass:
-                                                              "sc-gPEVay eQYmiW",
-                                                            staticStyle: {
-                                                              "vertical-align":
-                                                                "-webkit-baseline-middle",
-                                                              display:
-                                                                "inline-block",
-                                                            },
-                                                            style:
-                                                              "font-size:" +
-                                                              _vm.generatorStore
-                                                                .font_size +
-                                                              ";" +
-                                                              "font-family: " +
-                                                              _vm.generatorStore
-                                                                .font_family +
-                                                              ";",
-                                                            attrs: {
-                                                              cellpadding: "0",
-                                                              cellspacing: "0",
-                                                            },
-                                                          },
-                                                          [
-                                                            _c("tbody", [
-                                                              _c(
-                                                                "tr",
-                                                                {
-                                                                  staticStyle: {
-                                                                    "text-align":
-                                                                      "center",
-                                                                  },
-                                                                },
-                                                                [
-                                                                  _vm
-                                                                    .generatorStore
-                                                                    .facebook
-                                                                    ? _c("td", [
-                                                                        _c(
-                                                                          "a",
-                                                                          {
-                                                                            staticClass:
-                                                                              "sc-hzDkRC kpsoyz",
-                                                                            staticStyle:
-                                                                              {
-                                                                                display:
-                                                                                  "inline-block",
-                                                                                padding:
-                                                                                  "0px",
-                                                                              },
-                                                                            style:
-                                                                              "background-color:" +
-                                                                              _vm
-                                                                                .generatorStore
-                                                                                .link_color,
-                                                                            attrs:
-                                                                              {
-                                                                                href:
-                                                                                  "//" +
-                                                                                  _vm
-                                                                                    .generatorStore
-                                                                                    .facebook,
-                                                                                color:
-                                                                                  "#1e1e20",
-                                                                              },
-                                                                          },
-                                                                          [
-                                                                            _c(
-                                                                              "img",
-                                                                              {
-                                                                                staticClass:
-                                                                                  "sc-bRBYWo ccSRck",
-                                                                                staticStyle:
-                                                                                  {
-                                                                                    "background-color":
-                                                                                      "rgb(",
-                                                                                    "max-width":
-                                                                                      "135px",
-                                                                                    display:
-                                                                                      "block",
-                                                                                  },
-                                                                                attrs:
-                                                                                  {
-                                                                                    src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/facebook-icon-2x.png",
-                                                                                    alt: "facebook",
-                                                                                    height:
-                                                                                      "24",
-                                                                                  },
-                                                                              }
-                                                                            ),
-                                                                          ]
-                                                                        ),
-                                                                      ])
-                                                                    : _vm._e(),
-                                                                  _vm._v(" "),
-                                                                  _vm._m(2),
-                                                                  _vm._v(" "),
-                                                                  _vm
-                                                                    .generatorStore
-                                                                    .twitter
-                                                                    ? _c("td", [
-                                                                        _c(
-                                                                          "a",
-                                                                          {
-                                                                            staticClass:
-                                                                              "sc-hzDkRC kpsoyz",
-                                                                            staticStyle:
-                                                                              {
-                                                                                display:
-                                                                                  "inline-block",
-                                                                                padding:
-                                                                                  "0px",
-                                                                              },
-                                                                            style:
-                                                                              "background-color:" +
-                                                                              _vm
-                                                                                .generatorStore
-                                                                                .link_color,
-                                                                            attrs:
-                                                                              {
-                                                                                href:
-                                                                                  "//" +
-                                                                                  _vm
-                                                                                    .generatorStore
-                                                                                    .twitter,
-                                                                                color:
-                                                                                  "#1e1e20",
-                                                                              },
-                                                                          },
-                                                                          [
-                                                                            _c(
-                                                                              "img",
-                                                                              {
-                                                                                staticClass:
-                                                                                  "sc-bRBYWo ccSRck",
-                                                                                staticStyle:
-                                                                                  {
-                                                                                    "background-color":
-                                                                                      "rgb(",
-                                                                                    "max-width":
-                                                                                      "135px",
-                                                                                    display:
-                                                                                      "block",
-                                                                                  },
-                                                                                attrs:
-                                                                                  {
-                                                                                    src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/twitter-icon-2x.png",
-                                                                                    alt: "twitter",
-                                                                                    color:
-                                                                                      "#1e1e20",
-                                                                                    height:
-                                                                                      "24",
-                                                                                  },
-                                                                              }
-                                                                            ),
-                                                                          ]
-                                                                        ),
-                                                                      ])
-                                                                    : _vm._e(),
-                                                                  _vm._v(" "),
-                                                                  _vm._m(3),
-                                                                  _vm._v(" "),
-                                                                  _vm
-                                                                    .generatorStore
-                                                                    .linkedin
-                                                                    ? _c("td", [
-                                                                        _c(
-                                                                          "a",
-                                                                          {
-                                                                            staticClass:
-                                                                              "sc-hzDkRC kpsoyz",
-                                                                            staticStyle:
-                                                                              {
-                                                                                display:
-                                                                                  "inline-block",
-                                                                                padding:
-                                                                                  "0px",
-                                                                              },
-                                                                            style:
-                                                                              "background-color:" +
-                                                                              _vm
-                                                                                .generatorStore
-                                                                                .link_color,
-                                                                            attrs:
-                                                                              {
-                                                                                href:
-                                                                                  "//" +
-                                                                                  _vm
-                                                                                    .generatorStore
-                                                                                    .linkedin,
-                                                                                color:
-                                                                                  "#1e1e20",
-                                                                              },
-                                                                          },
-                                                                          [
-                                                                            _c(
-                                                                              "img",
-                                                                              {
-                                                                                staticClass:
-                                                                                  "sc-bRBYWo ccSRck",
-                                                                                staticStyle:
-                                                                                  {
-                                                                                    "background-color":
-                                                                                      "rgb(",
-                                                                                    "max-width":
-                                                                                      "135px",
-                                                                                    display:
-                                                                                      "block",
-                                                                                  },
-                                                                                attrs:
-                                                                                  {
-                                                                                    src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/linkedin-icon-2x.png",
-                                                                                    alt: "linkedin",
-                                                                                    color:
-                                                                                      "#1e1e20",
-                                                                                    height:
-                                                                                      "24",
-                                                                                  },
-                                                                              }
-                                                                            ),
-                                                                          ]
-                                                                        ),
-                                                                      ])
-                                                                    : _vm._e(),
-                                                                  _vm._v(" "),
-                                                                  _vm._m(4),
-                                                                  _vm._v(" "),
-                                                                  _vm
-                                                                    .generatorStore
-                                                                    .instagram
-                                                                    ? _c("td", [
-                                                                        _c(
-                                                                          "a",
-                                                                          {
-                                                                            staticClass:
-                                                                              "sc-hzDkRC kpsoyz",
-                                                                            staticStyle:
-                                                                              {
-                                                                                display:
-                                                                                  "inline-block",
-                                                                                padding:
-                                                                                  "0px",
-                                                                              },
-                                                                            style:
-                                                                              "background-color:" +
-                                                                              _vm
-                                                                                .generatorStore
-                                                                                .link_color,
-                                                                            attrs:
-                                                                              {
-                                                                                href:
-                                                                                  "//" +
-                                                                                  _vm
-                                                                                    .generatorStore
-                                                                                    .instagram,
-                                                                                color:
-                                                                                  "#1e1e20",
-                                                                              },
-                                                                          },
-                                                                          [
-                                                                            _c(
-                                                                              "img",
-                                                                              {
-                                                                                staticClass:
-                                                                                  "sc-bRBYWo ccSRck",
-                                                                                staticStyle:
-                                                                                  {
-                                                                                    "background-color":
-                                                                                      "rgb(",
-                                                                                    "max-width":
-                                                                                      "135px",
-                                                                                    display:
-                                                                                      "block",
-                                                                                  },
-                                                                                attrs:
-                                                                                  {
-                                                                                    src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/instagram-icon-2x.png",
-                                                                                    alt: "instagram",
-                                                                                    color:
-                                                                                      "#1e1e20",
-                                                                                    height:
-                                                                                      "24",
-                                                                                  },
-                                                                              }
-                                                                            ),
-                                                                          ]
-                                                                        ),
-                                                                      ])
-                                                                    : _vm._e(),
-                                                                  _vm._v(" "),
-                                                                  _vm._m(5),
-                                                                ]
-                                                              ),
-                                                            ]),
-                                                          ]
-                                                        ),
-                                                      ]
-                                                    ),
-                                                  ]),
-                                                ]),
-                                              ]
-                                            ),
-                                          ]
-                                        )
-                                      : _vm._e(),
-                                    _vm._v(" "),
-                                    _vm._m(6),
-                                    _vm._v(" "),
-                                    _c(
-                                      "td",
-                                      {
-                                        staticStyle: {
-                                          padding: "0px",
-                                          "vertical-align": "middle",
-                                        },
-                                      },
-                                      [
-                                        _vm.generatorStore.first_name ||
-                                        _vm.generatorStore.last_name
-                                          ? _c(
-                                              "h3",
-                                              {
-                                                staticClass: "sc-fBuWsC eeihxG",
-                                                staticStyle: {
-                                                  margin: "0px",
-                                                  "font-size": "16px",
-                                                  color: "rgb(0, 0, 0)",
-                                                },
-                                                attrs: { color: "#000000" },
-                                              },
-                                              [
-                                                _vm.generatorStore.first_name
-                                                  ? _c("span", [
-                                                      _vm._v(
-                                                        _vm._s(
-                                                          _vm.generatorStore
-                                                            .first_name
-                                                        )
-                                                      ),
-                                                    ])
-                                                  : _vm._e(),
-                                                _c("span", [_vm._v(" ")]),
-                                                _vm.generatorStore.last_name
-                                                  ? _c("span", [
-                                                      _vm._v(
-                                                        _vm._s(
-                                                          _vm.generatorStore
-                                                            .last_name
-                                                        )
-                                                      ),
-                                                    ])
-                                                  : _vm._e(),
-                                              ]
-                                            )
-                                          : _vm._e(),
-                                        _vm._v(" "),
-                                        _vm.generatorStore.job_title
-                                          ? _c(
-                                              "p",
-                                              {
-                                                staticClass: "sc-fMiknA bxZCMx",
-                                                staticStyle: {
-                                                  margin: "0px",
-                                                  color: "rgb(0, 0, 0)",
-                                                  "font-size": "12px",
-                                                  "line-height": "20px",
-                                                },
-                                                attrs: {
-                                                  color: "#000000",
-                                                  "font-size": "small",
-                                                },
-                                              },
-                                              [
-                                                _c("span", [
-                                                  _vm._v(
-                                                    _vm._s(
-                                                      _vm.generatorStore
-                                                        .job_title
-                                                    )
-                                                  ),
-                                                ]),
-                                              ]
-                                            )
-                                          : _vm._e(),
-                                        _vm._v(" "),
-                                        _vm.generatorStore.department ||
-                                        _vm.generatorStore.company_name
-                                          ? _c(
-                                              "p",
-                                              {
-                                                staticClass: "sc-dVhcbM fghLuF",
-                                                staticStyle: {
-                                                  margin: "0px",
-                                                  "font-weight": "500",
-                                                  color: "rgb(0, 0, 0)",
-                                                  "font-size": "12px",
-                                                  "line-height": "20px",
-                                                },
-                                                attrs: {
-                                                  color: "#000000",
-                                                  "font-size": "small",
-                                                },
-                                              },
-                                              [
-                                                _vm.generatorStore.department
-                                                  ? _c("span", [
-                                                      _vm._v(
-                                                        _vm._s(
-                                                          _vm.generatorStore
-                                                            .department
-                                                        )
-                                                      ),
-                                                    ])
-                                                  : _vm._e(),
-                                                _c("span", [_vm._v(" | ")]),
-                                                _vm.generatorStore.company_name
-                                                  ? _c("span", [
-                                                      _vm._v(
-                                                        _vm._s(
-                                                          _vm.generatorStore
-                                                            .company_name
-                                                        )
-                                                      ),
-                                                    ])
-                                                  : _vm._e(),
-                                              ]
-                                            )
-                                          : _vm._e(),
-                                        _vm._v(" "),
-                                        _c(
-                                          "table",
-                                          {
-                                            staticClass: "sc-gPEVay eQYmiW",
-                                            staticStyle: {
-                                              "vertical-align":
-                                                "-webkit-baseline-middle",
-                                              width: "100%",
-                                            },
-                                            style:
-                                              "font-size:" +
-                                              _vm.generatorStore.font_size +
-                                              ";" +
-                                              "font-family: " +
-                                              _vm.generatorStore.font_family +
-                                              ";",
-                                            attrs: {
-                                              cellpadding: "0",
-                                              cellspacing: "0",
-                                            },
-                                          },
-                                          [
-                                            _c("tbody", [
-                                              _vm._m(7),
-                                              _vm._v(" "),
-                                              _c("tr", [
-                                                _c("td", {
-                                                  staticClass:
-                                                    "sc-jhAzac hmXDXQ",
-                                                  staticStyle: {
-                                                    width: "100%",
-                                                    "border-left": "none",
-                                                    display: "block",
-                                                  },
-                                                  style:
-                                                    "border-bottom: 1px solid " +
-                                                    _vm.generatorStore
-                                                      .theme_color,
-                                                  attrs: {
-                                                    color: "#dd1515",
-                                                    direction: "horizontal",
-                                                    height: "1",
-                                                  },
-                                                }),
-                                              ]),
-                                              _vm._v(" "),
-                                              _vm._m(8),
-                                            ]),
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "table",
-                                          {
-                                            staticClass: "sc-gPEVay eQYmiW",
-                                            staticStyle: {
-                                              "vertical-align":
-                                                "-webkit-baseline-middle",
-                                            },
-                                            style:
-                                              "font-size:" +
-                                              _vm.generatorStore.font_size +
-                                              ";" +
-                                              "font-family: " +
-                                              _vm.generatorStore.font_family +
-                                              ";",
-                                            attrs: {
-                                              cellpadding: "0",
-                                              cellspacing: "0",
-                                            },
-                                          },
-                                          [
-                                            _c("tbody", [
-                                              _c(
-                                                "tr",
-                                                {
-                                                  staticStyle: {
-                                                    "vertical-align": "middle",
-                                                  },
-                                                  attrs: { height: "25" },
-                                                },
-                                                [
-                                                  _c(
-                                                    "td",
-                                                    {
-                                                      staticStyle: {
-                                                        "vertical-align":
-                                                          "middle",
-                                                      },
-                                                      attrs: { width: "30" },
-                                                    },
-                                                    [
-                                                      _c(
-                                                        "table",
-                                                        {
-                                                          staticClass:
-                                                            "sc-gPEVay eQYmiW",
-                                                          staticStyle: {
-                                                            "vertical-align":
-                                                              "-webkit-baseline-middle",
-                                                          },
-                                                          style:
-                                                            "font-size:" +
-                                                            _vm.generatorStore
-                                                              .font_size +
-                                                            ";" +
-                                                            "font-family: " +
-                                                            _vm.generatorStore
-                                                              .font_family +
-                                                            ";",
-                                                          attrs: {
-                                                            cellpadding: "0",
-                                                            cellspacing: "0",
-                                                          },
-                                                        },
-                                                        [
-                                                          _vm.generatorStore
-                                                            .office_phone ||
-                                                          _vm.generatorStore
-                                                            .mobile_phone
-                                                            ? _c("tbody", [
-                                                                _c("tr", [
-                                                                  _c(
-                                                                    "td",
-                                                                    {
-                                                                      staticStyle:
-                                                                        {
-                                                                          "vertical-align":
-                                                                            "bottom",
-                                                                        },
-                                                                    },
-                                                                    [
-                                                                      _c(
-                                                                        "span",
-                                                                        {
-                                                                          staticClass:
-                                                                            "sc-jlyJG bbyJzT",
-                                                                          staticStyle:
-                                                                            {
-                                                                              display:
-                                                                                "block",
-                                                                            },
-                                                                          style:
-                                                                            "background-color: " +
-                                                                            _vm
-                                                                              .generatorStore
-                                                                              .theme_color,
-                                                                          attrs:
-                                                                            {
-                                                                              color:
-                                                                                "#dd1515",
-                                                                              width:
-                                                                                "11",
-                                                                            },
-                                                                        },
-                                                                        [
-                                                                          _c(
-                                                                            "img",
-                                                                            {
-                                                                              staticClass:
-                                                                                "sc-iRbamj blSEcj",
-                                                                              staticStyle:
-                                                                                {
-                                                                                  display:
-                                                                                    "block",
-                                                                                },
-                                                                              style:
-                                                                                "background-color: " +
-                                                                                _vm
-                                                                                  .generatorStore
-                                                                                  .theme_color,
-                                                                              attrs:
-                                                                                {
-                                                                                  src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/phone-icon-2x.png",
-                                                                                  color:
-                                                                                    "#dd1515",
-                                                                                  width:
-                                                                                    "13",
-                                                                                },
-                                                                            }
-                                                                          ),
-                                                                        ]
-                                                                      ),
-                                                                    ]
-                                                                  ),
-                                                                ]),
-                                                              ])
-                                                            : _vm._e(),
-                                                        ]
-                                                      ),
-                                                    ]
-                                                  ),
-                                                  _vm._v(" "),
-                                                  _vm.generatorStore
-                                                    .office_phone ||
-                                                  _vm.generatorStore
-                                                    .mobile_phone
-                                                    ? _c(
-                                                        "td",
-                                                        {
-                                                          staticStyle: {
-                                                            padding: "0px",
-                                                            color:
-                                                              "rgb(0, 0, 0)",
-                                                          },
-                                                        },
-                                                        [
-                                                          _vm.generatorStore
-                                                            .office_phone
-                                                            ? _c(
-                                                                "a",
-                                                                {
-                                                                  staticClass:
-                                                                    "sc-gipzik iyhjGb",
-                                                                  staticStyle: {
-                                                                    "text-decoration":
-                                                                      "none",
-                                                                    color:
-                                                                      "rgb(0, 0, 0)",
-                                                                    "font-size":
-                                                                      "12px",
-                                                                  },
-                                                                  attrs: {
-                                                                    href:
-                                                                      "tel:" +
-                                                                      _vm
-                                                                        .generatorStore
-                                                                        .office_phone,
-                                                                    color:
-                                                                      "#000000",
-                                                                  },
-                                                                },
-                                                                [
-                                                                  _c("span", [
-                                                                    _vm._v(
-                                                                      _vm._s(
-                                                                        _vm
-                                                                          .generatorStore
-                                                                          .office_phone
-                                                                      )
-                                                                    ),
-                                                                  ]),
-                                                                ]
-                                                              )
-                                                            : _vm._e(),
-                                                          _vm._v(
-                                                            "\n                                      |\n                                      "
-                                                          ),
-                                                          _vm.generatorStore
-                                                            .mobile_phone
-                                                            ? _c(
-                                                                "a",
-                                                                {
-                                                                  staticClass:
-                                                                    "sc-gipzik iyhjGb",
-                                                                  staticStyle: {
-                                                                    "text-decoration":
-                                                                      "none",
-                                                                    color:
-                                                                      "rgb(0, 0, 0)",
-                                                                    "font-size":
-                                                                      "12px",
-                                                                  },
-                                                                  attrs: {
-                                                                    href:
-                                                                      "tel:" +
-                                                                      _vm
-                                                                        .generatorStore
-                                                                        .mobile_phone,
-                                                                    color:
-                                                                      "#000000",
-                                                                  },
-                                                                },
-                                                                [
-                                                                  _c("span", [
-                                                                    _vm._v(
-                                                                      _vm._s(
-                                                                        _vm
-                                                                          .generatorStore
-                                                                          .mobile_phone
-                                                                      )
-                                                                    ),
-                                                                  ]),
-                                                                ]
-                                                              )
-                                                            : _vm._e(),
-                                                        ]
-                                                      )
-                                                    : _vm._e(),
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "tr",
-                                                {
-                                                  staticStyle: {
-                                                    "vertical-align": "middle",
-                                                  },
-                                                  attrs: { height: "25" },
-                                                },
-                                                [
-                                                  _c(
-                                                    "td",
-                                                    {
-                                                      staticStyle: {
-                                                        "vertical-align":
-                                                          "middle",
-                                                      },
-                                                      attrs: { width: "30" },
-                                                    },
-                                                    [
-                                                      _c(
-                                                        "table",
-                                                        {
-                                                          staticClass:
-                                                            "sc-gPEVay eQYmiW",
-                                                          staticStyle: {
-                                                            "vertical-align":
-                                                              "-webkit-baseline-middle",
-                                                          },
-                                                          style:
-                                                            "font-size:" +
-                                                            _vm.generatorStore
-                                                              .font_size +
-                                                            ";" +
-                                                            "font-family: " +
-                                                            _vm.generatorStore
-                                                              .font_family +
-                                                            ";",
-                                                          attrs: {
-                                                            cellpadding: "0",
-                                                            cellspacing: "0",
-                                                          },
-                                                        },
-                                                        [
-                                                          _vm.generatorStore
-                                                            .email
-                                                            ? _c("tbody", [
-                                                                _c("tr", [
-                                                                  _c(
-                                                                    "td",
-                                                                    {
-                                                                      staticStyle:
-                                                                        {
-                                                                          "vertical-align":
-                                                                            "bottom",
-                                                                        },
-                                                                    },
-                                                                    [
-                                                                      _c(
-                                                                        "span",
-                                                                        {
-                                                                          staticClass:
-                                                                            "sc-jlyJG bbyJzT",
-                                                                          staticStyle:
-                                                                            {
-                                                                              display:
-                                                                                "block",
-                                                                            },
-                                                                          style:
-                                                                            "background-color:" +
-                                                                            _vm
-                                                                              .generatorStore
-                                                                              .theme_color,
-                                                                          attrs:
-                                                                            {
-                                                                              color:
-                                                                                "#dd1515",
-                                                                              width:
-                                                                                "11",
-                                                                            },
-                                                                        },
-                                                                        [
-                                                                          _c(
-                                                                            "img",
-                                                                            {
-                                                                              staticClass:
-                                                                                "sc-iRbamj blSEcj",
-                                                                              staticStyle:
-                                                                                {
-                                                                                  display:
-                                                                                    "block",
-                                                                                },
-                                                                              style:
-                                                                                "background-color:" +
-                                                                                _vm
-                                                                                  .generatorStore
-                                                                                  .theme_color,
-                                                                              attrs:
-                                                                                {
-                                                                                  src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/email-icon-2x.png",
-                                                                                  color:
-                                                                                    "#dd1515",
-                                                                                  width:
-                                                                                    "13",
-                                                                                },
-                                                                            }
-                                                                          ),
-                                                                        ]
-                                                                      ),
-                                                                    ]
-                                                                  ),
-                                                                ]),
-                                                              ])
-                                                            : _vm._e(),
-                                                        ]
-                                                      ),
-                                                    ]
-                                                  ),
-                                                  _vm._v(" "),
-                                                  _c(
-                                                    "td",
-                                                    {
-                                                      staticStyle: {
-                                                        padding: "0px",
-                                                      },
-                                                    },
-                                                    [
-                                                      _vm.generatorStore.email
-                                                        ? _c(
-                                                            "a",
-                                                            {
-                                                              staticClass:
-                                                                "sc-gipzik iyhjGb",
-                                                              staticStyle: {
-                                                                "text-decoration":
-                                                                  "none",
-                                                                color:
-                                                                  "rgb(0, 0, 0)",
-                                                                "font-size":
-                                                                  "12px",
-                                                              },
-                                                              attrs: {
-                                                                href:
-                                                                  "mailto:" +
-                                                                  _vm
-                                                                    .generatorStore
-                                                                    .email,
-                                                                color:
-                                                                  "#000000",
-                                                              },
-                                                            },
-                                                            [
-                                                              _c("span", [
-                                                                _vm._v(
-                                                                  _vm._s(
-                                                                    _vm
-                                                                      .generatorStore
-                                                                      .email
-                                                                  )
-                                                                ),
-                                                              ]),
-                                                            ]
-                                                          )
-                                                        : _vm._e(),
-                                                    ]
-                                                  ),
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "tr",
-                                                {
-                                                  staticStyle: {
-                                                    "vertical-align": "middle",
-                                                  },
-                                                  attrs: { height: "25" },
-                                                },
-                                                [
-                                                  _c(
-                                                    "td",
-                                                    {
-                                                      staticStyle: {
-                                                        "vertical-align":
-                                                          "middle",
-                                                      },
-                                                      attrs: { width: "30" },
-                                                    },
-                                                    [
-                                                      _c(
-                                                        "table",
-                                                        {
-                                                          staticClass:
-                                                            "sc-gPEVay eQYmiW",
-                                                          staticStyle: {
-                                                            "vertical-align":
-                                                              "-webkit-baseline-middle",
-                                                          },
-                                                          style:
-                                                            "font-size:" +
-                                                            _vm.generatorStore
-                                                              .font_size +
-                                                            ";" +
-                                                            "font-family: " +
-                                                            _vm.generatorStore
-                                                              .font_family +
-                                                            ";",
-                                                          attrs: {
-                                                            cellpadding: "0",
-                                                            cellspacing: "0",
-                                                          },
-                                                        },
-                                                        [
-                                                          _vm.generatorStore
-                                                            .website_url
-                                                            ? _c("tbody", [
-                                                                _c("tr", [
-                                                                  _c(
-                                                                    "td",
-                                                                    {
-                                                                      staticStyle:
-                                                                        {
-                                                                          "vertical-align":
-                                                                            "bottom",
-                                                                        },
-                                                                    },
-                                                                    [
-                                                                      _c(
-                                                                        "span",
-                                                                        {
-                                                                          staticClass:
-                                                                            "sc-jlyJG bbyJzT",
-                                                                          staticStyle:
-                                                                            {
-                                                                              display:
-                                                                                "block",
-                                                                            },
-                                                                          style:
-                                                                            "background-color:" +
-                                                                            _vm
-                                                                              .generatorStore
-                                                                              .theme_color,
-                                                                          attrs:
-                                                                            {
-                                                                              color:
-                                                                                "#dd1515",
-                                                                              width:
-                                                                                "11",
-                                                                            },
-                                                                        },
-                                                                        [
-                                                                          _c(
-                                                                            "img",
-                                                                            {
-                                                                              staticClass:
-                                                                                "sc-iRbamj blSEcj",
-                                                                              staticStyle:
-                                                                                {
-                                                                                  display:
-                                                                                    "block",
-                                                                                },
-                                                                              style:
-                                                                                "background-color:" +
-                                                                                _vm
-                                                                                  .generatorStore
-                                                                                  .theme_color,
-                                                                              attrs:
-                                                                                {
-                                                                                  src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/link-icon-2x.png",
-                                                                                  color:
-                                                                                    "#dd1515",
-                                                                                  width:
-                                                                                    "13",
-                                                                                },
-                                                                            }
-                                                                          ),
-                                                                        ]
-                                                                      ),
-                                                                    ]
-                                                                  ),
-                                                                ]),
-                                                              ])
-                                                            : _vm._e(),
-                                                        ]
-                                                      ),
-                                                    ]
-                                                  ),
-                                                  _vm._v(" "),
-                                                  _vm.generatorStore.website_url
-                                                    ? _c(
-                                                        "td",
-                                                        {
-                                                          staticStyle: {
-                                                            padding: "0px",
-                                                          },
-                                                        },
-                                                        [
-                                                          _c(
-                                                            "a",
-                                                            {
-                                                              staticClass:
-                                                                "sc-gipzik iyhjGb",
-                                                              staticStyle: {
-                                                                "text-decoration":
-                                                                  "none",
-                                                                color:
-                                                                  "rgb(0, 0, 0)",
-                                                                "font-size":
-                                                                  "12px",
-                                                              },
-                                                              attrs: {
-                                                                href:
-                                                                  "//" +
-                                                                  _vm
-                                                                    .generatorStore
-                                                                    .website_url,
-                                                                color:
-                                                                  "#000000",
-                                                              },
-                                                            },
-                                                            [
-                                                              _c("span", [
-                                                                _vm._v(
-                                                                  _vm._s(
-                                                                    _vm
-                                                                      .generatorStore
-                                                                      .website_url
-                                                                  )
-                                                                ),
-                                                              ]),
-                                                            ]
-                                                          ),
-                                                        ]
-                                                      )
-                                                    : _vm._e(),
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "tr",
-                                                {
-                                                  staticStyle: {
-                                                    "vertical-align": "middle",
-                                                  },
-                                                  attrs: { height: "25" },
-                                                },
-                                                [
-                                                  _c(
-                                                    "td",
-                                                    {
-                                                      staticStyle: {
-                                                        "vertical-align":
-                                                          "middle",
-                                                      },
-                                                      attrs: { width: "30" },
-                                                    },
-                                                    [
-                                                      _c(
-                                                        "table",
-                                                        {
-                                                          staticClass:
-                                                            "sc-gPEVay eQYmiW",
-                                                          staticStyle: {
-                                                            "vertical-align":
-                                                              "-webkit-baseline-middle",
-                                                          },
-                                                          style:
-                                                            "font-size:" +
-                                                            _vm.generatorStore
-                                                              .font_size +
-                                                            ";" +
-                                                            "font-family: " +
-                                                            _vm.generatorStore
-                                                              .font_family +
-                                                            ";",
-                                                          attrs: {
-                                                            cellpadding: "0",
-                                                            cellspacing: "0",
-                                                          },
-                                                        },
-                                                        [
-                                                          _vm.generatorStore
-                                                            .address_1 ||
-                                                          _vm.generatorStore
-                                                            .address_2 ||
-                                                          _vm.generatorStore
-                                                            .address_3 ||
-                                                          _vm.generatorStore
-                                                            .address_4
-                                                            ? _c("tbody", [
-                                                                _c("tr", [
-                                                                  _c(
-                                                                    "td",
-                                                                    {
-                                                                      staticStyle:
-                                                                        {
-                                                                          "vertical-align":
-                                                                            "bottom",
-                                                                        },
-                                                                    },
-                                                                    [
-                                                                      _c(
-                                                                        "span",
-                                                                        {
-                                                                          staticClass:
-                                                                            "sc-jlyJG bbyJzT",
-                                                                          staticStyle:
-                                                                            {
-                                                                              display:
-                                                                                "block",
-                                                                            },
-                                                                          style:
-                                                                            "background-color:" +
-                                                                            _vm
-                                                                              .generatorStore
-                                                                              .theme_color,
-                                                                          attrs:
-                                                                            {
-                                                                              color:
-                                                                                "#dd1515",
-                                                                              width:
-                                                                                "11",
-                                                                            },
-                                                                        },
-                                                                        [
-                                                                          _c(
-                                                                            "img",
-                                                                            {
-                                                                              staticClass:
-                                                                                "sc-iRbamj blSEcj",
-                                                                              staticStyle:
-                                                                                {
-                                                                                  display:
-                                                                                    "block",
-                                                                                },
-                                                                              style:
-                                                                                "background-color:" +
-                                                                                _vm
-                                                                                  .generatorStore
-                                                                                  .theme_color,
-                                                                              attrs:
-                                                                                {
-                                                                                  src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/address-icon-2x.png",
-                                                                                  color:
-                                                                                    "#dd1515",
-                                                                                  width:
-                                                                                    "13",
-                                                                                },
-                                                                            }
-                                                                          ),
-                                                                        ]
-                                                                      ),
-                                                                    ]
-                                                                  ),
-                                                                ]),
-                                                              ])
-                                                            : _vm._e(),
-                                                        ]
-                                                      ),
-                                                    ]
-                                                  ),
-                                                  _vm._v(" "),
-                                                  _vm.generatorStore
-                                                    .address_1 ||
-                                                  _vm.generatorStore
-                                                    .address_2 ||
-                                                  _vm.generatorStore
-                                                    .address_3 ||
-                                                  _vm.generatorStore.address_4
-                                                    ? _c(
-                                                        "td",
-                                                        {
-                                                          staticStyle: {
-                                                            padding: "0px",
-                                                          },
-                                                        },
-                                                        [
-                                                          _c(
-                                                            "span",
-                                                            {
-                                                              staticClass:
-                                                                "sc-csuQGl CQhxV",
-                                                              staticStyle: {
-                                                                "font-size":
-                                                                  "12px",
-                                                                color:
-                                                                  "rgb(0, 0, 0)",
-                                                              },
-                                                              attrs: {
-                                                                color:
-                                                                  "#000000",
-                                                              },
-                                                            },
-                                                            [
-                                                              _vm.generatorStore
-                                                                .address_1
-                                                                ? _c("span", [
-                                                                    _vm._v(
-                                                                      "\n                                          " +
-                                                                        _vm._s(
-                                                                          _vm
-                                                                            .generatorStore
-                                                                            .address_1
-                                                                        )
-                                                                    ),
-                                                                  ])
-                                                                : _vm._e(),
-                                                              _vm.generatorStore
-                                                                .address_2
-                                                                ? _c("span", [
-                                                                    _vm._v(
-                                                                      _vm._s(
-                                                                        ", " +
-                                                                          _vm
-                                                                            .generatorStore
-                                                                            .address_2
-                                                                      )
-                                                                    ),
-                                                                  ])
-                                                                : _vm._e(),
-                                                              _vm.generatorStore
-                                                                .address_3
-                                                                ? _c("span", [
-                                                                    _vm._v(
-                                                                      _vm._s(
-                                                                        ", " +
-                                                                          _vm
-                                                                            .generatorStore
-                                                                            .address_3
-                                                                      )
-                                                                    ),
-                                                                  ])
-                                                                : _vm._e(),
-                                                              _vm.generatorStore
-                                                                .address_4
-                                                                ? _c("span", [
-                                                                    _vm._v(
-                                                                      _vm._s(
-                                                                        ", " +
-                                                                          _vm
-                                                                            .generatorStore
-                                                                            .address_4
-                                                                      )
-                                                                    ),
-                                                                  ])
-                                                                : _vm._e(),
-                                                            ]
-                                                          ),
-                                                        ]
-                                                      )
-                                                    : _vm._e(),
-                                                ]
-                                              ),
-                                            ]),
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "table",
-                                          {
-                                            staticClass: "sc-gPEVay eQYmiW",
-                                            staticStyle: {
-                                              "vertical-align":
-                                                "-webkit-baseline-middle",
-                                            },
-                                            style:
-                                              "font-size:" +
-                                              _vm.generatorStore.font_size +
-                                              ";" +
-                                              "font-family: " +
-                                              _vm.generatorStore.font_family +
-                                              ";",
-                                            attrs: {
-                                              cellpadding: "0",
-                                              cellspacing: "0",
-                                            },
-                                          },
-                                          [_vm._m(9)]
-                                        ),
-                                        _vm._v(" "),
-                                        !_vm.generatorStore.custom_cta_image &&
-                                        (_vm.generatorStore.custom_cta_url ||
-                                          _vm.generatorStore.custom_cta_copy)
-                                          ? _c(
-                                              "span",
-                                              {
-                                                staticStyle: {
-                                                  display: "block",
-                                                  "text-align": "left",
-                                                },
-                                              },
-                                              [
-                                                _c(
-                                                  "a",
-                                                  {
-                                                    staticClass:
-                                                      "sc-fAjcbJ byigni",
-                                                    staticStyle: {
-                                                      "border-width":
-                                                        "6px 12px",
-                                                      "border-style": "solid",
-                                                      display: "inline-block",
-                                                      "font-weight": "700",
-                                                      "text-decoration": "none",
-                                                      "text-align": "center",
-                                                      "line-height": "40px",
-                                                      "font-size": "12px",
-                                                      "border-radius": "3px",
-                                                    },
-                                                    style:
-                                                      "border-color:" +
-                                                      _vm.generatorStore
-                                                        .cta_color +
-                                                      "; background-color:" +
-                                                      _vm.generatorStore
-                                                        .cta_color +
-                                                      "; color: " +
-                                                      _vm.generatorStore
-                                                        .cta_text_color,
-                                                    attrs: {
-                                                      target: "_blank",
-                                                      rel: "noopener noreferrer",
-                                                      href:
-                                                        "//" +
-                                                        _vm.generatorStore
-                                                          .custom_cta_url,
-                                                    },
-                                                  },
-                                                  [
-                                                    _vm._v(
-                                                      _vm._s(
-                                                        _vm.generatorStore
-                                                          .custom_cta_copy
-                                                      )
-                                                    ),
-                                                  ]
-                                                ),
-                                              ]
-                                            )
-                                          : _vm._e(),
-                                        _vm._v(" "),
-                                        _c(
-                                          "table",
-                                          {
-                                            staticClass: "sc-gPEVay eQYmiW",
-                                            staticStyle: {
-                                              "vertical-align":
-                                                "-webkit-baseline-middle",
-                                            },
-                                            style:
-                                              "font-size:" +
-                                              _vm.generatorStore.font_size +
-                                              ";" +
-                                              "font-family: " +
-                                              _vm.generatorStore.font_family +
-                                              ";",
-                                            attrs: {
-                                              cellpadding: "0",
-                                              cellspacing: "0",
-                                            },
-                                          },
-                                          [_vm._m(10)]
-                                        ),
-                                      ]
-                                    ),
-                                  ]),
-                                ]),
-                              ]
-                            ),
-                          ]),
-                        ]),
-                        _vm._v(" "),
-                        _vm.generatorStore.custom_cta_image
-                          ? _c("tr", [
-                              _c("td", [
-                                _c(
-                                  "table",
-                                  {
-                                    staticClass: "sc-gPEVay eQYmiW",
-                                    staticStyle: {
-                                      "vertical-align":
-                                        "-webkit-baseline-middle",
-                                      "font-size": "medium",
-                                      "font-family": "'Trebuchet MS'",
-                                    },
-                                    attrs: {
-                                      cellpadding: "0",
-                                      cellspacing: "0",
-                                    },
-                                  },
-                                  [
-                                    _c("tbody", [
-                                      _vm._m(11),
-                                      _vm._v(" "),
-                                      _c("tr", [
-                                        _c(
-                                          "span",
-                                          {
-                                            staticStyle: {
-                                              display: "block",
-                                              "text-align": "left",
-                                            },
-                                          },
-                                          [
-                                            _c(
-                                              "a",
-                                              {
-                                                staticClass: "sc-fAjcbJ byigni",
-                                                staticStyle: {
-                                                  "border-width": "initial",
-                                                  "border-style": "none",
-                                                  "border-color": "initial",
-                                                  display: "inline-block",
-                                                  "background-color":
-                                                    "transparent",
-                                                  color: "rgb(255, 255, 255)",
-                                                  "font-weight": "700",
-                                                  "text-decoration": "none",
-                                                  "text-align": "center",
-                                                  "line-height": "1",
-                                                  "font-size": "12px",
-                                                  "border-radius": "3px",
-                                                },
-                                                attrs: {
-                                                  target: "_blank",
-                                                  rel: "noopener noreferrer",
-                                                  href: _vm.generatorStore
-                                                    .custom_cta_url,
-                                                  color: "#6a78d1",
-                                                },
-                                              },
-                                              [
-                                                _c("img", {
-                                                  staticClass:
-                                                    "sc-caSCKo jjNSwx",
-                                                  staticStyle: {
-                                                    "text-decoration": "none",
-                                                    "max-width": "728px",
-                                                  },
-                                                  attrs: {
-                                                    src: _vm.generatorStore
-                                                      .custom_cta_image,
-                                                    role: "presentation",
-                                                  },
-                                                }),
-                                              ]
-                                            ),
-                                          ]
-                                        ),
-                                      ]),
-                                    ]),
-                                  ]
-                                ),
-                              ]),
-                            ])
-                          : _vm._e(),
-                      ]),
-                    ]
-                  ),
-                ]
+                  _vm.generatorStore.template == "template_1"
+                    ? _c("template-1")
+                    : _c("template-2"),
+                ],
+                1
               ),
             ]),
           ]),
@@ -33646,66 +32707,6 @@ var staticRenderFns = [
         _c("strong", [_vm._v("Check out my new Email Signature")]),
       ]),
     ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("td", { attrs: { width: "5" } }, [_c("div")])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("td", { attrs: { width: "5" } }, [_c("div")])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("td", { attrs: { width: "5" } }, [_c("div")])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("td", { attrs: { width: "5" } }, [_c("div")])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("td", { attrs: { width: "46" } }, [_c("div")])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("tr", [_c("td", { attrs: { height: "30" } })])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("tr", [_c("td", { attrs: { height: "30" } })])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("tbody", [_c("tr", [_c("td", { attrs: { height: "30" } })])])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("tbody", [_c("tr", [_c("td", { attrs: { height: "30" } })])])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("tr", [_c("td", { attrs: { height: "30" } })])
   },
 ]
 render._withStripped = true
@@ -33825,10 +32826,68 @@ var render = function () {
     _vm._v(" "),
     _c("div", { staticClass: "sidebar-body" }, [
       _vm.tab == "template"
-        ? _c("div", { staticClass: "page template" })
+        ? _c("div", { staticClass: "page template" }, [
+            _vm._m(0),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "input-container", attrs: { id: "template" } },
+              [
+                _c("div", { staticClass: "input-block" }, [
+                  _c("span", { staticClass: "input-wrapper" }, [
+                    _c("span", { staticClass: "input-label" }, [
+                      _vm._v("Template"),
+                    ]),
+                    _c(
+                      "select",
+                      {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.generatorStore.template,
+                            expression: "generatorStore.template",
+                          },
+                        ],
+                        staticClass: "input-field",
+                        on: {
+                          change: function ($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function (o) {
+                                return o.selected
+                              })
+                              .map(function (o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.$set(
+                              _vm.generatorStore,
+                              "template",
+                              $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            )
+                          },
+                        },
+                      },
+                      [
+                        _c("option", { attrs: { value: "template_1" } }, [
+                          _vm._v("Template 1"),
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "template_2" } }, [
+                          _vm._v("Template 2"),
+                        ]),
+                      ]
+                    ),
+                  ]),
+                ]),
+              ]
+            ),
+          ])
         : _vm.tab == "details"
         ? _c("div", { staticClass: "page details" }, [
-            _vm._m(0),
+            _vm._m(1),
             _vm._v(" "),
             _c(
               "div",
@@ -34344,7 +33403,7 @@ var render = function () {
               ]
             ),
             _vm._v(" "),
-            _vm._m(1),
+            _vm._m(2),
             _vm._v(" "),
             _c(
               "div",
@@ -34520,7 +33579,7 @@ var render = function () {
           ])
         : _vm.tab == "stylize"
         ? _c("div", { staticClass: "page stylize" }, [
-            _vm._m(2),
+            _vm._m(3),
             _vm._v(" "),
             _c(
               "div",
@@ -34779,7 +33838,7 @@ var render = function () {
             ),
           ])
         : _c("div", { staticClass: "page image" }, [
-            _vm._m(3),
+            _vm._m(4),
             _vm._v(" "),
             _c(
               "div",
@@ -34870,7 +33929,7 @@ var render = function () {
               ]
             ),
             _vm._v(" "),
-            _vm._m(4),
+            _vm._m(5),
             _vm._v(" "),
             _c(
               "div",
@@ -35037,7 +34096,7 @@ var render = function () {
               ]
             ),
             _vm._v(" "),
-            _vm._m(5),
+            _vm._m(6),
             _vm._v(" "),
             _c(
               "div",
@@ -35089,6 +34148,20 @@ var render = function () {
   ])
 }
 var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "title-wrapper", attrs: { id: "mainTitle" } },
+      [
+        _c("div", { staticClass: "title", attrs: { order: "1" } }, [
+          _vm._v("Select your template"),
+        ]),
+      ]
+    )
+  },
   function () {
     var _vm = this
     var _h = _vm.$createElement
@@ -35174,6 +34247,2714 @@ var staticRenderFns = [
         ]),
       ]
     )
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/template/Template1.vue?vue&type=template&id=ae615fe6&":
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/template/Template1.vue?vue&type=template&id=ae615fe6& ***!
+  \******************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "table",
+    {
+      staticClass: "sc-gPEVay eQYmiW",
+      staticStyle: { "vertical-align": "-webkit-baseline-middle" },
+      style:
+        "font-size:" +
+        _vm.generatorStore.font_size +
+        ";" +
+        "font-family: " +
+        _vm.generatorStore.font_family +
+        ";",
+      attrs: { cellpadding: "0", cellspacing: "0" },
+    },
+    [
+      _c("tbody", [
+        _c("tr", [
+          _c("td", [
+            _c(
+              "table",
+              {
+                staticClass: "sc-gPEVay eQYmiW",
+                staticStyle: { "vertical-align": "-webkit-baseline-middle" },
+                style:
+                  "font-size:" +
+                  _vm.generatorStore.font_size +
+                  ";" +
+                  "font-family: " +
+                  _vm.generatorStore.font_family +
+                  ";",
+                attrs: { cellpadding: "0", cellspacing: "0" },
+              },
+              [
+                _c("tbody", [
+                  _c("tr", [
+                    _vm.generatorStore.linkedin ||
+                    _vm.generatorStore.twitter ||
+                    _vm.generatorStore.instagram ||
+                    _vm.generatorStore.facebook ||
+                    _vm.generatorStore.profile_picture ||
+                    _vm.generatorStore.company_logo
+                      ? _c("td", { staticStyle: { "vertical-align": "top" } }, [
+                          _c(
+                            "table",
+                            {
+                              staticClass: "sc-gPEVay eQYmiW",
+                              staticStyle: {
+                                "vertical-align": "-webkit-baseline-middle",
+                              },
+                              style:
+                                "font-size:" +
+                                _vm.generatorStore.font_size +
+                                ";" +
+                                "font-family: " +
+                                _vm.generatorStore.font_family +
+                                ";",
+                              attrs: { cellpadding: "0", cellspacing: "0" },
+                            },
+                            [
+                              _c("tbody", [
+                                _vm.generatorStore.profile_picture
+                                  ? _c("tr", [
+                                      _c(
+                                        "td",
+                                        {
+                                          staticClass: "sc-TOsTZ kjYrri",
+                                          staticStyle: {
+                                            "text-align": "center",
+                                          },
+                                        },
+                                        [
+                                          _c("img", {
+                                            staticClass: "sc-cHGsZl bHiaRe",
+                                            staticStyle: {
+                                              "max-width": "128px",
+                                              display: "block",
+                                            },
+                                            attrs: {
+                                              src: _vm.generatorStore
+                                                .profile_picture,
+                                              role: "presentation",
+                                              width: "130",
+                                            },
+                                          }),
+                                        ]
+                                      ),
+                                    ])
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.generatorStore.profile_picture
+                                  ? _c("tr", [
+                                      _c("td", { attrs: { height: "30" } }),
+                                    ])
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.generatorStore.company_logo
+                                  ? _c("tr", [
+                                      _c(
+                                        "td",
+                                        {
+                                          staticClass: "sc-TOsTZ kjYrri",
+                                          staticStyle: {
+                                            "text-align": "center",
+                                          },
+                                        },
+                                        [
+                                          _c("img", {
+                                            staticClass: "sc-cHGsZl bHiaRe",
+                                            staticStyle: {
+                                              "max-width": "130px",
+                                              display: "block",
+                                            },
+                                            attrs: {
+                                              src: _vm.generatorStore
+                                                .company_logo,
+                                              role: "presentation",
+                                              width: "130",
+                                            },
+                                          }),
+                                        ]
+                                      ),
+                                    ])
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.generatorStore.company_logo
+                                  ? _c("tr", [
+                                      _c("td", { attrs: { height: "30" } }),
+                                    ])
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _c("tr", [
+                                  _c(
+                                    "td",
+                                    { staticStyle: { "text-align": "center" } },
+                                    [
+                                      _c(
+                                        "table",
+                                        {
+                                          staticClass: "sc-gPEVay eQYmiW",
+                                          staticStyle: {
+                                            "vertical-align":
+                                              "-webkit-baseline-middle",
+                                            display: "inline-block",
+                                          },
+                                          style:
+                                            "font-size:" +
+                                            _vm.generatorStore.font_size +
+                                            ";" +
+                                            "font-family: " +
+                                            _vm.generatorStore.font_family +
+                                            ";",
+                                          attrs: {
+                                            cellpadding: "0",
+                                            cellspacing: "0",
+                                          },
+                                        },
+                                        [
+                                          _c("tbody", [
+                                            _c(
+                                              "tr",
+                                              {
+                                                staticStyle: {
+                                                  "text-align": "center",
+                                                },
+                                              },
+                                              [
+                                                _vm.generatorStore.facebook
+                                                  ? _c("td", [
+                                                      _c(
+                                                        "a",
+                                                        {
+                                                          staticClass:
+                                                            "sc-hzDkRC kpsoyz",
+                                                          staticStyle: {
+                                                            display:
+                                                              "inline-block",
+                                                            padding: "0px",
+                                                          },
+                                                          style:
+                                                            "background-color:" +
+                                                            _vm.generatorStore
+                                                              .link_color,
+                                                          attrs: {
+                                                            href:
+                                                              "//" +
+                                                              _vm.generatorStore
+                                                                .facebook,
+                                                          },
+                                                        },
+                                                        [
+                                                          _c("img", {
+                                                            staticClass:
+                                                              "sc-bRBYWo ccSRck",
+                                                            staticStyle: {
+                                                              "background-color":
+                                                                "rgb(30, 30, 32)",
+                                                              "max-width":
+                                                                "135px",
+                                                              display: "block",
+                                                            },
+                                                            attrs: {
+                                                              src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/facebook-icon-2x.png",
+                                                              alt: "facebook",
+                                                              height: "24",
+                                                            },
+                                                          }),
+                                                        ]
+                                                      ),
+                                                    ])
+                                                  : _vm._e(),
+                                                _vm._v(" "),
+                                                _vm._m(0),
+                                                _vm._v(" "),
+                                                _vm.generatorStore.twitter
+                                                  ? _c("td", [
+                                                      _c(
+                                                        "a",
+                                                        {
+                                                          staticClass:
+                                                            "sc-hzDkRC kpsoyz",
+                                                          staticStyle: {
+                                                            display:
+                                                              "inline-block",
+                                                            padding: "0px",
+                                                          },
+                                                          style:
+                                                            "background-color:" +
+                                                            _vm.generatorStore
+                                                              .link_color,
+                                                          attrs: {
+                                                            href:
+                                                              "//" +
+                                                              _vm.generatorStore
+                                                                .twitter,
+                                                          },
+                                                        },
+                                                        [
+                                                          _c("img", {
+                                                            staticClass:
+                                                              "sc-bRBYWo ccSRck",
+                                                            staticStyle: {
+                                                              "background-color":
+                                                                "rgb(30, 30, 32)",
+                                                              "max-width":
+                                                                "135px",
+                                                              display: "block",
+                                                            },
+                                                            attrs: {
+                                                              src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/twitter-icon-2x.png",
+                                                              alt: "twitter",
+                                                              height: "24",
+                                                            },
+                                                          }),
+                                                        ]
+                                                      ),
+                                                    ])
+                                                  : _vm._e(),
+                                                _vm._v(" "),
+                                                _vm._m(1),
+                                                _vm._v(" "),
+                                                _vm.generatorStore.linkedin
+                                                  ? _c("td", [
+                                                      _c(
+                                                        "a",
+                                                        {
+                                                          staticClass:
+                                                            "sc-hzDkRC kpsoyz",
+                                                          staticStyle: {
+                                                            display:
+                                                              "inline-block",
+                                                            padding: "0px",
+                                                          },
+                                                          style:
+                                                            "background-color:" +
+                                                            _vm.generatorStore
+                                                              .link_color,
+                                                          attrs: {
+                                                            href:
+                                                              "//" +
+                                                              _vm.generatorStore
+                                                                .linkedin,
+                                                          },
+                                                        },
+                                                        [
+                                                          _c("img", {
+                                                            staticClass:
+                                                              "sc-bRBYWo ccSRck",
+                                                            staticStyle: {
+                                                              "background-color":
+                                                                "rgb(30, 30, 32)",
+                                                              "max-width":
+                                                                "135px",
+                                                              display: "block",
+                                                            },
+                                                            attrs: {
+                                                              src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/linkedin-icon-2x.png",
+                                                              alt: "linkedin",
+                                                              height: "24",
+                                                            },
+                                                          }),
+                                                        ]
+                                                      ),
+                                                    ])
+                                                  : _vm._e(),
+                                                _vm._v(" "),
+                                                _vm._m(2),
+                                                _vm._v(" "),
+                                                _vm.generatorStore.instagram
+                                                  ? _c("td", [
+                                                      _c(
+                                                        "a",
+                                                        {
+                                                          staticClass:
+                                                            "sc-hzDkRC kpsoyz",
+                                                          staticStyle: {
+                                                            display:
+                                                              "inline-block",
+                                                            padding: "0px",
+                                                          },
+                                                          style:
+                                                            "background-color:" +
+                                                            _vm.generatorStore
+                                                              .link_color,
+                                                          attrs: {
+                                                            href:
+                                                              "//" +
+                                                              _vm.generatorStore
+                                                                .instagram,
+                                                          },
+                                                        },
+                                                        [
+                                                          _c("img", {
+                                                            staticClass:
+                                                              "sc-bRBYWo ccSRck",
+                                                            staticStyle: {
+                                                              "background-color":
+                                                                "rgb(30, 30, 32)",
+                                                              "max-width":
+                                                                "135px",
+                                                              display: "block",
+                                                            },
+                                                            attrs: {
+                                                              src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/instagram-icon-2x.png",
+                                                              alt: "instagram",
+                                                              height: "24",
+                                                            },
+                                                          }),
+                                                        ]
+                                                      ),
+                                                    ])
+                                                  : _vm._e(),
+                                                _vm._v(" "),
+                                                _vm._m(3),
+                                              ]
+                                            ),
+                                          ]),
+                                        ]
+                                      ),
+                                    ]
+                                  ),
+                                ]),
+                              ]),
+                            ]
+                          ),
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm._m(4),
+                    _vm._v(" "),
+                    _c(
+                      "td",
+                      {
+                        staticStyle: {
+                          padding: "0px",
+                          "vertical-align": "middle",
+                        },
+                      },
+                      [
+                        _vm.generatorStore.first_name ||
+                        _vm.generatorStore.last_name
+                          ? _c(
+                              "h3",
+                              {
+                                staticClass: "sc-fBuWsC eeihxG",
+                                staticStyle: {
+                                  margin: "0px",
+                                  "font-size": "16px",
+                                },
+                                style: "color:" + _vm.generatorStore.text_color,
+                              },
+                              [
+                                _vm.generatorStore.first_name
+                                  ? _c("span", [
+                                      _vm._v(
+                                        _vm._s(_vm.generatorStore.first_name)
+                                      ),
+                                    ])
+                                  : _vm._e(),
+                                _c("span", [_vm._v(" ")]),
+                                _vm.generatorStore.last_name
+                                  ? _c("span", [
+                                      _vm._v(
+                                        _vm._s(_vm.generatorStore.last_name)
+                                      ),
+                                    ])
+                                  : _vm._e(),
+                              ]
+                            )
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _vm.generatorStore.job_title
+                          ? _c(
+                              "p",
+                              {
+                                staticClass: "sc-fMiknA bxZCMx",
+                                staticStyle: {
+                                  margin: "0px",
+                                  "font-size": "12px",
+                                  "line-height": "20px",
+                                },
+                                style: "color:" + _vm.generatorStore.text_color,
+                                attrs: { "font-size": "small" },
+                              },
+                              [
+                                _c("span", [
+                                  _vm._v(_vm._s(_vm.generatorStore.job_title)),
+                                ]),
+                              ]
+                            )
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _vm.generatorStore.department ||
+                        _vm.generatorStore.company_name
+                          ? _c(
+                              "p",
+                              {
+                                staticClass: "sc-dVhcbM fghLuF",
+                                staticStyle: {
+                                  margin: "0px",
+                                  "font-weight": "500",
+                                  "font-size": "12px",
+                                  "line-height": "20px",
+                                },
+                                style: "color:" + _vm.generatorStore.text_color,
+                                attrs: { "font-size": "small" },
+                              },
+                              [
+                                _vm.generatorStore.department
+                                  ? _c("span", [
+                                      _vm._v(
+                                        _vm._s(_vm.generatorStore.department)
+                                      ),
+                                    ])
+                                  : _vm._e(),
+                                _c("span", [_vm._v(" | ")]),
+                                _vm.generatorStore.company_name
+                                  ? _c("span", [
+                                      _vm._v(
+                                        _vm._s(_vm.generatorStore.company_name)
+                                      ),
+                                    ])
+                                  : _vm._e(),
+                              ]
+                            )
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _c(
+                          "table",
+                          {
+                            staticClass: "sc-gPEVay eQYmiW",
+                            staticStyle: {
+                              "vertical-align": "-webkit-baseline-middle",
+                              width: "100%",
+                            },
+                            style:
+                              "font-size:" +
+                              _vm.generatorStore.font_size +
+                              ";" +
+                              "font-family: " +
+                              _vm.generatorStore.font_family +
+                              ";",
+                            attrs: { cellpadding: "0", cellspacing: "0" },
+                          },
+                          [
+                            _c("tbody", [
+                              _vm._m(5),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", {
+                                  staticClass: "sc-jhAzac hmXDXQ",
+                                  staticStyle: {
+                                    width: "100%",
+                                    "border-left": "none",
+                                    display: "block",
+                                  },
+                                  style:
+                                    "border-bottom: 1px solid " +
+                                    _vm.generatorStore.theme_color,
+                                  attrs: {
+                                    direction: "horizontal",
+                                    height: "1",
+                                  },
+                                }),
+                              ]),
+                              _vm._v(" "),
+                              _vm._m(6),
+                            ]),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "table",
+                          {
+                            staticClass: "sc-gPEVay eQYmiW",
+                            staticStyle: {
+                              "vertical-align": "-webkit-baseline-middle",
+                            },
+                            style:
+                              "font-size:" +
+                              _vm.generatorStore.font_size +
+                              ";" +
+                              "font-family: " +
+                              _vm.generatorStore.font_family +
+                              ";",
+                            attrs: { cellpadding: "0", cellspacing: "0" },
+                          },
+                          [
+                            _c("tbody", [
+                              _c(
+                                "tr",
+                                {
+                                  staticStyle: { "vertical-align": "middle" },
+                                  attrs: { height: "25" },
+                                },
+                                [
+                                  _c(
+                                    "td",
+                                    {
+                                      staticStyle: {
+                                        "vertical-align": "middle",
+                                      },
+                                      attrs: { width: "30" },
+                                    },
+                                    [
+                                      _c(
+                                        "table",
+                                        {
+                                          staticClass: "sc-gPEVay eQYmiW",
+                                          staticStyle: {
+                                            "vertical-align":
+                                              "-webkit-baseline-middle",
+                                          },
+                                          style:
+                                            "font-size:" +
+                                            _vm.generatorStore.font_size +
+                                            ";" +
+                                            "font-family: " +
+                                            _vm.generatorStore.font_family +
+                                            ";",
+                                          attrs: {
+                                            cellpadding: "0",
+                                            cellspacing: "0",
+                                          },
+                                        },
+                                        [
+                                          _vm.generatorStore.office_phone ||
+                                          _vm.generatorStore.mobile_phone
+                                            ? _c("tbody", [
+                                                _c("tr", [
+                                                  _c(
+                                                    "td",
+                                                    {
+                                                      staticStyle: {
+                                                        "vertical-align":
+                                                          "bottom",
+                                                      },
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "span",
+                                                        {
+                                                          staticClass:
+                                                            "sc-jlyJG bbyJzT",
+                                                          staticStyle: {
+                                                            display: "block",
+                                                          },
+                                                          style:
+                                                            "background-color: " +
+                                                            _vm.generatorStore
+                                                              .theme_color,
+                                                          attrs: {
+                                                            width: "11",
+                                                          },
+                                                        },
+                                                        [
+                                                          _c("img", {
+                                                            staticClass:
+                                                              "sc-iRbamj blSEcj",
+                                                            staticStyle: {
+                                                              display: "block",
+                                                            },
+                                                            style:
+                                                              "background-color: " +
+                                                              _vm.generatorStore
+                                                                .theme_color,
+                                                            attrs: {
+                                                              src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/phone-icon-2x.png",
+                                                              width: "13",
+                                                            },
+                                                          }),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  ),
+                                                ]),
+                                              ])
+                                            : _vm._e(),
+                                        ]
+                                      ),
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _vm.generatorStore.office_phone ||
+                                  _vm.generatorStore.mobile_phone
+                                    ? _c(
+                                        "td",
+                                        {
+                                          staticStyle: { padding: "0px" },
+                                          style:
+                                            "color:" +
+                                            _vm.generatorStore.text_color,
+                                        },
+                                        [
+                                          _vm.generatorStore.office_phone
+                                            ? _c(
+                                                "a",
+                                                {
+                                                  staticClass:
+                                                    "sc-gipzik iyhjGb",
+                                                  staticStyle: {
+                                                    "text-decoration": "none",
+                                                    "font-size": "12px",
+                                                  },
+                                                  style:
+                                                    "color:" +
+                                                    _vm.generatorStore
+                                                      .text_color,
+                                                  attrs: {
+                                                    href:
+                                                      "tel:" +
+                                                      _vm.generatorStore
+                                                        .office_phone,
+                                                  },
+                                                },
+                                                [
+                                                  _c("span", [
+                                                    _vm._v(
+                                                      _vm._s(
+                                                        _vm.generatorStore
+                                                          .office_phone
+                                                      )
+                                                    ),
+                                                  ]),
+                                                ]
+                                              )
+                                            : _vm._e(),
+                                          _vm._v(
+                                            "\n                        |\n                        "
+                                          ),
+                                          _vm.generatorStore.mobile_phone
+                                            ? _c(
+                                                "a",
+                                                {
+                                                  staticClass:
+                                                    "sc-gipzik iyhjGb",
+                                                  staticStyle: {
+                                                    "text-decoration": "none",
+                                                    "font-size": "12px",
+                                                  },
+                                                  style:
+                                                    "color:" +
+                                                    _vm.generatorStore
+                                                      .text_color,
+                                                  attrs: {
+                                                    href:
+                                                      "tel:" +
+                                                      _vm.generatorStore
+                                                        .mobile_phone,
+                                                  },
+                                                },
+                                                [
+                                                  _c("span", [
+                                                    _vm._v(
+                                                      _vm._s(
+                                                        _vm.generatorStore
+                                                          .mobile_phone
+                                                      )
+                                                    ),
+                                                  ]),
+                                                ]
+                                              )
+                                            : _vm._e(),
+                                        ]
+                                      )
+                                    : _vm._e(),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "tr",
+                                {
+                                  staticStyle: { "vertical-align": "middle" },
+                                  attrs: { height: "25" },
+                                },
+                                [
+                                  _c(
+                                    "td",
+                                    {
+                                      staticStyle: {
+                                        "vertical-align": "middle",
+                                      },
+                                      attrs: { width: "30" },
+                                    },
+                                    [
+                                      _c(
+                                        "table",
+                                        {
+                                          staticClass: "sc-gPEVay eQYmiW",
+                                          staticStyle: {
+                                            "vertical-align":
+                                              "-webkit-baseline-middle",
+                                          },
+                                          style:
+                                            "font-size:" +
+                                            _vm.generatorStore.font_size +
+                                            ";" +
+                                            "font-family: " +
+                                            _vm.generatorStore.font_family +
+                                            ";",
+                                          attrs: {
+                                            cellpadding: "0",
+                                            cellspacing: "0",
+                                          },
+                                        },
+                                        [
+                                          _vm.generatorStore.email
+                                            ? _c("tbody", [
+                                                _c("tr", [
+                                                  _c(
+                                                    "td",
+                                                    {
+                                                      staticStyle: {
+                                                        "vertical-align":
+                                                          "bottom",
+                                                      },
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "span",
+                                                        {
+                                                          staticClass:
+                                                            "sc-jlyJG bbyJzT",
+                                                          staticStyle: {
+                                                            display: "block",
+                                                          },
+                                                          style:
+                                                            "background-color:" +
+                                                            _vm.generatorStore
+                                                              .theme_color,
+                                                          attrs: {
+                                                            width: "11",
+                                                          },
+                                                        },
+                                                        [
+                                                          _c("img", {
+                                                            staticClass:
+                                                              "sc-iRbamj blSEcj",
+                                                            staticStyle: {
+                                                              display: "block",
+                                                            },
+                                                            style:
+                                                              "background-color:" +
+                                                              _vm.generatorStore
+                                                                .theme_color,
+                                                            attrs: {
+                                                              src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/email-icon-2x.png",
+                                                              width: "13",
+                                                            },
+                                                          }),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  ),
+                                                ]),
+                                              ])
+                                            : _vm._e(),
+                                        ]
+                                      ),
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "td",
+                                    { staticStyle: { padding: "0px" } },
+                                    [
+                                      _vm.generatorStore.email
+                                        ? _c(
+                                            "a",
+                                            {
+                                              staticClass: "sc-gipzik iyhjGb",
+                                              staticStyle: {
+                                                "text-decoration": "none",
+                                                "font-size": "12px",
+                                              },
+                                              style:
+                                                "color:" +
+                                                _vm.generatorStore.text_color,
+                                              attrs: {
+                                                href:
+                                                  "mailto:" +
+                                                  _vm.generatorStore.email,
+                                              },
+                                            },
+                                            [
+                                              _c("span", [
+                                                _vm._v(
+                                                  _vm._s(
+                                                    _vm.generatorStore.email
+                                                  )
+                                                ),
+                                              ]),
+                                            ]
+                                          )
+                                        : _vm._e(),
+                                    ]
+                                  ),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "tr",
+                                {
+                                  staticStyle: { "vertical-align": "middle" },
+                                  attrs: { height: "25" },
+                                },
+                                [
+                                  _c(
+                                    "td",
+                                    {
+                                      staticStyle: {
+                                        "vertical-align": "middle",
+                                      },
+                                      attrs: { width: "30" },
+                                    },
+                                    [
+                                      _c(
+                                        "table",
+                                        {
+                                          staticClass: "sc-gPEVay eQYmiW",
+                                          staticStyle: {
+                                            "vertical-align":
+                                              "-webkit-baseline-middle",
+                                          },
+                                          style:
+                                            "font-size:" +
+                                            _vm.generatorStore.font_size +
+                                            ";" +
+                                            "font-family: " +
+                                            _vm.generatorStore.font_family +
+                                            ";",
+                                          attrs: {
+                                            cellpadding: "0",
+                                            cellspacing: "0",
+                                          },
+                                        },
+                                        [
+                                          _vm.generatorStore.website_url
+                                            ? _c("tbody", [
+                                                _c("tr", [
+                                                  _c(
+                                                    "td",
+                                                    {
+                                                      staticStyle: {
+                                                        "vertical-align":
+                                                          "bottom",
+                                                      },
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "span",
+                                                        {
+                                                          staticClass:
+                                                            "sc-jlyJG bbyJzT",
+                                                          staticStyle: {
+                                                            display: "block",
+                                                          },
+                                                          style:
+                                                            "background-color:" +
+                                                            _vm.generatorStore
+                                                              .theme_color,
+                                                          attrs: {
+                                                            width: "11",
+                                                          },
+                                                        },
+                                                        [
+                                                          _c("img", {
+                                                            staticClass:
+                                                              "sc-iRbamj blSEcj",
+                                                            staticStyle: {
+                                                              display: "block",
+                                                            },
+                                                            style:
+                                                              "background-color:" +
+                                                              _vm.generatorStore
+                                                                .theme_color,
+                                                            attrs: {
+                                                              src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/link-icon-2x.png",
+                                                              width: "13",
+                                                            },
+                                                          }),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  ),
+                                                ]),
+                                              ])
+                                            : _vm._e(),
+                                        ]
+                                      ),
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _vm.generatorStore.website_url
+                                    ? _c(
+                                        "td",
+                                        { staticStyle: { padding: "0px" } },
+                                        [
+                                          _c(
+                                            "a",
+                                            {
+                                              staticClass: "sc-gipzik iyhjGb",
+                                              staticStyle: {
+                                                "text-decoration": "none",
+                                                "font-size": "12px",
+                                              },
+                                              style:
+                                                "color:" +
+                                                _vm.generatorStore.text_color,
+                                              attrs: {
+                                                href:
+                                                  "//" +
+                                                  _vm.generatorStore
+                                                    .website_url,
+                                              },
+                                            },
+                                            [
+                                              _c("span", [
+                                                _vm._v(
+                                                  _vm._s(
+                                                    _vm.generatorStore
+                                                      .website_url
+                                                  )
+                                                ),
+                                              ]),
+                                            ]
+                                          ),
+                                        ]
+                                      )
+                                    : _vm._e(),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "tr",
+                                {
+                                  staticStyle: { "vertical-align": "middle" },
+                                  attrs: { height: "25" },
+                                },
+                                [
+                                  _c(
+                                    "td",
+                                    {
+                                      staticStyle: {
+                                        "vertical-align": "middle",
+                                      },
+                                      attrs: { width: "30" },
+                                    },
+                                    [
+                                      _c(
+                                        "table",
+                                        {
+                                          staticClass: "sc-gPEVay eQYmiW",
+                                          staticStyle: {
+                                            "vertical-align":
+                                              "-webkit-baseline-middle",
+                                          },
+                                          style:
+                                            "font-size:" +
+                                            _vm.generatorStore.font_size +
+                                            ";" +
+                                            "font-family: " +
+                                            _vm.generatorStore.font_family +
+                                            ";",
+                                          attrs: {
+                                            cellpadding: "0",
+                                            cellspacing: "0",
+                                          },
+                                        },
+                                        [
+                                          _vm.generatorStore.address_1 ||
+                                          _vm.generatorStore.address_2 ||
+                                          _vm.generatorStore.address_3 ||
+                                          _vm.generatorStore.address_4
+                                            ? _c("tbody", [
+                                                _c("tr", [
+                                                  _c(
+                                                    "td",
+                                                    {
+                                                      staticStyle: {
+                                                        "vertical-align":
+                                                          "bottom",
+                                                      },
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "span",
+                                                        {
+                                                          staticClass:
+                                                            "sc-jlyJG bbyJzT",
+                                                          staticStyle: {
+                                                            display: "block",
+                                                          },
+                                                          style:
+                                                            "background-color:" +
+                                                            _vm.generatorStore
+                                                              .theme_color,
+                                                          attrs: {
+                                                            width: "11",
+                                                          },
+                                                        },
+                                                        [
+                                                          _c("img", {
+                                                            staticClass:
+                                                              "sc-iRbamj blSEcj",
+                                                            staticStyle: {
+                                                              display: "block",
+                                                            },
+                                                            style:
+                                                              "background-color:" +
+                                                              _vm.generatorStore
+                                                                .theme_color,
+                                                            attrs: {
+                                                              src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/address-icon-2x.png",
+                                                              width: "13",
+                                                            },
+                                                          }),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  ),
+                                                ]),
+                                              ])
+                                            : _vm._e(),
+                                        ]
+                                      ),
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _vm.generatorStore.address_1 ||
+                                  _vm.generatorStore.address_2 ||
+                                  _vm.generatorStore.address_3 ||
+                                  _vm.generatorStore.address_4
+                                    ? _c(
+                                        "td",
+                                        { staticStyle: { padding: "0px" } },
+                                        [
+                                          _c(
+                                            "span",
+                                            {
+                                              staticClass: "sc-csuQGl CQhxV",
+                                              staticStyle: {
+                                                "font-size": "12px",
+                                              },
+                                              style:
+                                                "color:" +
+                                                _vm.generatorStore.text_color,
+                                            },
+                                            [
+                                              _vm.generatorStore.address_1
+                                                ? _c("span", [
+                                                    _vm._v(
+                                                      "\n                            " +
+                                                        _vm._s(
+                                                          _vm.generatorStore
+                                                            .address_1
+                                                        )
+                                                    ),
+                                                  ])
+                                                : _vm._e(),
+                                              _vm.generatorStore.address_2
+                                                ? _c("span", [
+                                                    _vm._v(
+                                                      _vm._s(
+                                                        ", " +
+                                                          _vm.generatorStore
+                                                            .address_2
+                                                      )
+                                                    ),
+                                                  ])
+                                                : _vm._e(),
+                                              _vm.generatorStore.address_3
+                                                ? _c("span", [
+                                                    _vm._v(
+                                                      _vm._s(
+                                                        ", " +
+                                                          _vm.generatorStore
+                                                            .address_3
+                                                      )
+                                                    ),
+                                                  ])
+                                                : _vm._e(),
+                                              _vm.generatorStore.address_4
+                                                ? _c("span", [
+                                                    _vm._v(
+                                                      _vm._s(
+                                                        ", " +
+                                                          _vm.generatorStore
+                                                            .address_4
+                                                      )
+                                                    ),
+                                                  ])
+                                                : _vm._e(),
+                                            ]
+                                          ),
+                                        ]
+                                      )
+                                    : _vm._e(),
+                                ]
+                              ),
+                            ]),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "table",
+                          {
+                            staticClass: "sc-gPEVay eQYmiW",
+                            staticStyle: {
+                              "vertical-align": "-webkit-baseline-middle",
+                            },
+                            style:
+                              "font-size:" +
+                              _vm.generatorStore.font_size +
+                              ";" +
+                              "font-family: " +
+                              _vm.generatorStore.font_family +
+                              ";",
+                            attrs: { cellpadding: "0", cellspacing: "0" },
+                          },
+                          [_vm._m(7)]
+                        ),
+                        _vm._v(" "),
+                        !_vm.generatorStore.custom_cta_image &&
+                        (_vm.generatorStore.custom_cta_url ||
+                          _vm.generatorStore.custom_cta_copy)
+                          ? _c(
+                              "span",
+                              {
+                                staticStyle: {
+                                  display: "block",
+                                  "text-align": "left",
+                                },
+                              },
+                              [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "sc-fAjcbJ byigni",
+                                    staticStyle: {
+                                      "border-width": "6px 12px",
+                                      "border-style": "solid",
+                                      display: "inline-block",
+                                      "font-weight": "700",
+                                      "text-decoration": "none",
+                                      "text-align": "center",
+                                      "line-height": "40px",
+                                      "font-size": "12px",
+                                      "border-radius": "3px",
+                                    },
+                                    style:
+                                      "border-color:" +
+                                      _vm.generatorStore.cta_color +
+                                      "; background-color:" +
+                                      _vm.generatorStore.cta_color +
+                                      "; color: " +
+                                      _vm.generatorStore.cta_text_color,
+                                    attrs: {
+                                      target: "_blank",
+                                      rel: "noopener noreferrer",
+                                      href:
+                                        "//" +
+                                        _vm.generatorStore.custom_cta_url,
+                                    },
+                                  },
+                                  [
+                                    _vm._v(
+                                      _vm._s(_vm.generatorStore.custom_cta_copy)
+                                    ),
+                                  ]
+                                ),
+                              ]
+                            )
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _c(
+                          "table",
+                          {
+                            staticClass: "sc-gPEVay eQYmiW",
+                            staticStyle: {
+                              "vertical-align": "-webkit-baseline-middle",
+                            },
+                            style:
+                              "font-size:" +
+                              _vm.generatorStore.font_size +
+                              ";" +
+                              "font-family: " +
+                              _vm.generatorStore.font_family +
+                              ";",
+                            attrs: { cellpadding: "0", cellspacing: "0" },
+                          },
+                          [_vm._m(8)]
+                        ),
+                      ]
+                    ),
+                  ]),
+                ]),
+              ]
+            ),
+          ]),
+        ]),
+        _vm._v(" "),
+        _vm.generatorStore.custom_cta_image
+          ? _c("tr", [
+              _c("td", [
+                _c(
+                  "table",
+                  {
+                    staticClass: "sc-gPEVay eQYmiW",
+                    staticStyle: {
+                      "vertical-align": "-webkit-baseline-middle",
+                      "font-size": "medium",
+                      "font-family": "'Trebuchet MS'",
+                    },
+                    attrs: { cellpadding: "0", cellspacing: "0" },
+                  },
+                  [
+                    _c("tbody", [
+                      _vm._m(9),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c(
+                          "span",
+                          {
+                            staticStyle: {
+                              display: "block",
+                              "text-align": "left",
+                            },
+                          },
+                          [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "sc-fAjcbJ byigni",
+                                staticStyle: {
+                                  "border-width": "initial",
+                                  "border-style": "none",
+                                  "border-color": "initial",
+                                  display: "inline-block",
+                                  "background-color": "transparent",
+                                  color: "rgb(255, 255, 255)",
+                                  "font-weight": "700",
+                                  "text-decoration": "none",
+                                  "text-align": "center",
+                                  "line-height": "1",
+                                  "font-size": "12px",
+                                  "border-radius": "3px",
+                                },
+                                attrs: {
+                                  target: "_blank",
+                                  rel: "noopener noreferrer",
+                                  href: _vm.generatorStore.custom_cta_url,
+                                },
+                              },
+                              [
+                                _c("img", {
+                                  staticClass: "sc-caSCKo jjNSwx",
+                                  staticStyle: {
+                                    "text-decoration": "none",
+                                    "max-width": "728px",
+                                  },
+                                  attrs: {
+                                    src: _vm.generatorStore.custom_cta_image,
+                                    role: "presentation",
+                                  },
+                                }),
+                              ]
+                            ),
+                          ]
+                        ),
+                      ]),
+                    ]),
+                  ]
+                ),
+              ]),
+            ])
+          : _vm._e(),
+      ]),
+    ]
+  )
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", { attrs: { width: "5" } }, [_c("div")])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", { attrs: { width: "5" } }, [_c("div")])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", { attrs: { width: "5" } }, [_c("div")])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", { attrs: { width: "5" } }, [_c("div")])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", { attrs: { width: "46" } }, [_c("div")])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [_c("td", { attrs: { height: "30" } })])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [_c("td", { attrs: { height: "30" } })])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tbody", [_c("tr", [_c("td", { attrs: { height: "30" } })])])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tbody", [_c("tr", [_c("td", { attrs: { height: "30" } })])])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [_c("td", { attrs: { height: "30" } })])
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/template/Template2.vue?vue&type=template&id=ae4530e4&":
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/template/Template2.vue?vue&type=template&id=ae4530e4& ***!
+  \******************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "table",
+    {
+      staticClass: "sc-gPEVay eQYmiW",
+      staticStyle: { "vertical-align": "-webkit-baseline-middle" },
+      style:
+        "font-size:" +
+        _vm.generatorStore.font_size +
+        ";" +
+        "font-family: " +
+        _vm.generatorStore.font_family +
+        ";",
+      attrs: { cellpadding: "0", cellspacing: "0" },
+    },
+    [
+      _c("tbody", [
+        _c("tr", [
+          _c("td", { staticStyle: { "text-align": "center" } }, [
+            _c("img", {
+              staticClass: "sc-cHGsZl bHiaRe",
+              staticStyle: { "max-width": "130px", display: "inline-block" },
+              attrs: {
+                src: _vm.generatorStore.profile_picture,
+                role: "presentation",
+                width: "130",
+              },
+            }),
+          ]),
+        ]),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _c("tr", { staticStyle: { "text-align": "center" } }, [
+          _c("td", [
+            _vm.generatorStore.first_name || _vm.generatorStore.last_name
+              ? _c(
+                  "h3",
+                  {
+                    staticClass: "sc-fBuWsC eeihxG",
+                    staticStyle: { margin: "0px", "font-size": "18px" },
+                    style: "color:" + _vm.generatorStore.text_color,
+                  },
+                  [
+                    _c("span", [_vm._v(_vm._s(_vm.generatorStore.first_name))]),
+                    _c("span", [_vm._v(" ")]),
+                    _c("span", [_vm._v(_vm._s(_vm.generatorStore.last_name))]),
+                  ]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.generatorStore.job_title
+              ? _c(
+                  "p",
+                  {
+                    staticClass: "sc-fMiknA bxZCMx",
+                    staticStyle: {
+                      margin: "0px",
+                      "font-size": "14px",
+                      "line-height": "22px",
+                    },
+                    style: "color:" + _vm.generatorStore.text_color,
+                    attrs: { "font-size": "medium" },
+                  },
+                  [_c("span", [_vm._v(_vm._s(_vm.generatorStore.job_title))])]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.generatorStore.department || _vm.generatorStore.company_name
+              ? _c(
+                  "p",
+                  {
+                    staticClass: "sc-dVhcbM fghLuF",
+                    staticStyle: {
+                      margin: "0px",
+                      "font-weight": "500",
+                      "font-size": "14px",
+                      "line-height": "22px",
+                    },
+                    style: "color:" + _vm.generatorStore.text_color,
+                    attrs: { "font-size": "medium" },
+                  },
+                  [
+                    _c("span", [_vm._v(_vm._s(_vm.generatorStore.department))]),
+                    _c("span", [_vm._v(" | ")]),
+                    _c("span", [
+                      _vm._v(_vm._s(_vm.generatorStore.company_name)),
+                    ]),
+                  ]
+                )
+              : _vm._e(),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("tr", [
+          _c("td", [
+            _c(
+              "table",
+              {
+                staticClass: "sc-gPEVay eQYmiW",
+                staticStyle: {
+                  "vertical-align": "-webkit-baseline-middle",
+                  width: "100%",
+                },
+                style:
+                  "font-size:" +
+                  _vm.generatorStore.font_size +
+                  ";" +
+                  "font-family: " +
+                  _vm.generatorStore.font_family +
+                  ";",
+                attrs: { cellpadding: "0", cellspacing: "0" },
+              },
+              [
+                _c("tbody", [
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", {
+                      staticClass: "sc-jhAzac hmXDXQ",
+                      staticStyle: {
+                        width: "100%",
+                        "border-left": "none",
+                        display: "block",
+                      },
+                      style:
+                        "border-bottom: 1px solid" +
+                        _vm.generatorStore.theme_color,
+                      attrs: { direction: "horizontal", height: "1" },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(2),
+                ]),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "table",
+              {
+                staticClass: "sc-gPEVay eQYmiW",
+                staticStyle: {
+                  "vertical-align": "-webkit-baseline-middle",
+                  width: "100%",
+                },
+                style:
+                  "font-size:" +
+                  _vm.generatorStore.font_size +
+                  ";" +
+                  "font-family: " +
+                  _vm.generatorStore.font_family +
+                  ";",
+                attrs: { cellpadding: "0", cellspacing: "0" },
+              },
+              [
+                _c("tbody", [
+                  _c("tr", { staticStyle: { "vertical-align": "middle" } }, [
+                    _c("td", [
+                      _c(
+                        "table",
+                        {
+                          staticClass: "sc-gPEVay eQYmiW",
+                          staticStyle: {
+                            "vertical-align": "-webkit-baseline-middle",
+                          },
+                          style:
+                            "font-size:" +
+                            _vm.generatorStore.font_size +
+                            ";" +
+                            "font-family: " +
+                            _vm.generatorStore.font_family +
+                            ";",
+                          attrs: { cellpadding: "0", cellspacing: "0" },
+                        },
+                        [
+                          _c("tbody", [
+                            _c(
+                              "tr",
+                              {
+                                staticStyle: { "vertical-align": "middle" },
+                                attrs: { height: "25" },
+                              },
+                              [
+                                _c(
+                                  "td",
+                                  {
+                                    staticStyle: { "vertical-align": "middle" },
+                                    attrs: { width: "30" },
+                                  },
+                                  [
+                                    _c(
+                                      "table",
+                                      {
+                                        staticClass: "sc-gPEVay eQYmiW",
+                                        staticStyle: {
+                                          "vertical-align":
+                                            "-webkit-baseline-middle",
+                                        },
+                                        style:
+                                          "font-size:" +
+                                          _vm.generatorStore.font_size +
+                                          ";" +
+                                          "font-family: " +
+                                          _vm.generatorStore.font_family +
+                                          ";",
+                                        attrs: {
+                                          cellpadding: "0",
+                                          cellspacing: "0",
+                                        },
+                                      },
+                                      [
+                                        _vm.generatorStore.office_phone ||
+                                        _vm.generatorStore.mobile_phone
+                                          ? _c("tbody", [
+                                              _c("tr", [
+                                                _c(
+                                                  "td",
+                                                  {
+                                                    staticStyle: {
+                                                      "vertical-align":
+                                                        "bottom",
+                                                    },
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "span",
+                                                      {
+                                                        staticClass:
+                                                          "sc-jlyJG bbyJzT",
+                                                        staticStyle: {
+                                                          display: "block",
+                                                        },
+                                                        style:
+                                                          "background-color: " +
+                                                          _vm.generatorStore
+                                                            .theme_color,
+                                                        attrs: { width: "11" },
+                                                      },
+                                                      [
+                                                        _c("img", {
+                                                          staticClass:
+                                                            "sc-iRbamj blSEcj",
+                                                          staticStyle: {
+                                                            display: "block",
+                                                          },
+                                                          style:
+                                                            "background-color: " +
+                                                            _vm.generatorStore
+                                                              .theme_color,
+                                                          attrs: {
+                                                            src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/phone-icon-2x.png",
+                                                            width: "13",
+                                                          },
+                                                        }),
+                                                      ]
+                                                    ),
+                                                  ]
+                                                ),
+                                              ]),
+                                            ])
+                                          : _vm._e(),
+                                      ]
+                                    ),
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _vm.generatorStore.office_phone ||
+                                _vm.generatorStore.mobile_phone
+                                  ? _c(
+                                      "td",
+                                      {
+                                        staticStyle: { padding: "0px" },
+                                        style:
+                                          "color:" +
+                                          _vm.generatorStore.text_color,
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "sc-gipzik iyhjGb",
+                                            staticStyle: {
+                                              "text-decoration": "none",
+                                              "font-size": "12px",
+                                            },
+                                            style:
+                                              "color:" +
+                                              _vm.generatorStore.text_color,
+                                            attrs: {
+                                              href:
+                                                "tel:" +
+                                                _vm.generatorStore.office_phone,
+                                            },
+                                          },
+                                          [
+                                            _c("span", [
+                                              _vm._v(
+                                                _vm._s(
+                                                  _vm.generatorStore
+                                                    .office_phone
+                                                )
+                                              ),
+                                            ]),
+                                          ]
+                                        ),
+                                        _vm._v(
+                                          "\n                        |\n                        "
+                                        ),
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "sc-gipzik iyhjGb",
+                                            staticStyle: {
+                                              "text-decoration": "none",
+                                              "font-size": "12px",
+                                            },
+                                            style:
+                                              "color:" +
+                                              _vm.generatorStore.text_color,
+                                            attrs: {
+                                              href:
+                                                "tel:" +
+                                                _vm.generatorStore.mobile_phone,
+                                            },
+                                          },
+                                          [
+                                            _c("span", [
+                                              _vm._v(
+                                                _vm._s(
+                                                  _vm.generatorStore
+                                                    .mobile_phone
+                                                )
+                                              ),
+                                            ]),
+                                          ]
+                                        ),
+                                      ]
+                                    )
+                                  : _vm._e(),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "tr",
+                              {
+                                staticStyle: { "vertical-align": "middle" },
+                                attrs: { height: "25" },
+                              },
+                              [
+                                _c(
+                                  "td",
+                                  {
+                                    staticStyle: { "vertical-align": "middle" },
+                                    attrs: { width: "30" },
+                                  },
+                                  [
+                                    _c(
+                                      "table",
+                                      {
+                                        staticClass: "sc-gPEVay eQYmiW",
+                                        staticStyle: {
+                                          "vertical-align":
+                                            "-webkit-baseline-middle",
+                                        },
+                                        style:
+                                          "font-size:" +
+                                          _vm.generatorStore.font_size +
+                                          ";" +
+                                          "font-family: " +
+                                          _vm.generatorStore.font_family +
+                                          ";",
+                                        attrs: {
+                                          cellpadding: "0",
+                                          cellspacing: "0",
+                                        },
+                                      },
+                                      [
+                                        _vm.generatorStore.email
+                                          ? _c("tbody", [
+                                              _c("tr", [
+                                                _c(
+                                                  "td",
+                                                  {
+                                                    staticStyle: {
+                                                      "vertical-align":
+                                                        "bottom",
+                                                    },
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "span",
+                                                      {
+                                                        staticClass:
+                                                          "sc-jlyJG bbyJzT",
+                                                        staticStyle: {
+                                                          display: "block",
+                                                        },
+                                                        style:
+                                                          "background-color: " +
+                                                          _vm.generatorStore
+                                                            .theme_color,
+                                                        attrs: { width: "11" },
+                                                      },
+                                                      [
+                                                        _c("img", {
+                                                          staticClass:
+                                                            "sc-iRbamj blSEcj",
+                                                          staticStyle: {
+                                                            display: "block",
+                                                          },
+                                                          style:
+                                                            "background-color: " +
+                                                            _vm.generatorStore
+                                                              .theme_color,
+                                                          attrs: {
+                                                            src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/email-icon-2x.png",
+                                                            width: "13",
+                                                          },
+                                                        }),
+                                                      ]
+                                                    ),
+                                                  ]
+                                                ),
+                                              ]),
+                                            ])
+                                          : _vm._e(),
+                                      ]
+                                    ),
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c("td", { staticStyle: { padding: "0px" } }, [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "sc-gipzik iyhjGb",
+                                      staticStyle: {
+                                        "text-decoration": "none",
+                                        "font-size": "12px",
+                                      },
+                                      style:
+                                        "color:" +
+                                        _vm.generatorStore.text_color,
+                                      attrs: {
+                                        href:
+                                          "mailto:" + _vm.generatorStore.email,
+                                      },
+                                    },
+                                    [
+                                      _c("span", [
+                                        _vm._v(
+                                          _vm._s(_vm.generatorStore.email)
+                                        ),
+                                      ]),
+                                    ]
+                                  ),
+                                ]),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "tr",
+                              {
+                                staticStyle: { "vertical-align": "middle" },
+                                attrs: { height: "25" },
+                              },
+                              [
+                                _c(
+                                  "td",
+                                  {
+                                    staticStyle: { "vertical-align": "middle" },
+                                    attrs: { width: "30" },
+                                  },
+                                  [
+                                    _c(
+                                      "table",
+                                      {
+                                        staticClass: "sc-gPEVay eQYmiW",
+                                        staticStyle: {
+                                          "vertical-align":
+                                            "-webkit-baseline-middle",
+                                        },
+                                        style:
+                                          "font-size:" +
+                                          _vm.generatorStore.font_size +
+                                          ";" +
+                                          "font-family: " +
+                                          _vm.generatorStore.font_family +
+                                          ";",
+                                        attrs: {
+                                          cellpadding: "0",
+                                          cellspacing: "0",
+                                        },
+                                      },
+                                      [
+                                        _vm.generatorStore.website_url
+                                          ? _c("tbody", [
+                                              _c("tr", [
+                                                _c(
+                                                  "td",
+                                                  {
+                                                    staticStyle: {
+                                                      "vertical-align":
+                                                        "bottom",
+                                                    },
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "span",
+                                                      {
+                                                        staticClass:
+                                                          "sc-jlyJG bbyJzT",
+                                                        staticStyle: {
+                                                          display: "block",
+                                                        },
+                                                        style:
+                                                          "background-color:" +
+                                                          _vm.generatorStore
+                                                            .theme_color,
+                                                        attrs: { width: "11" },
+                                                      },
+                                                      [
+                                                        _c("img", {
+                                                          staticClass:
+                                                            "sc-iRbamj blSEcj",
+                                                          staticStyle: {
+                                                            display: "block",
+                                                          },
+                                                          style:
+                                                            "background-color:" +
+                                                            _vm.generatorStore
+                                                              .theme_color,
+                                                          attrs: {
+                                                            src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/link-icon-2x.png",
+                                                            width: "13",
+                                                          },
+                                                        }),
+                                                      ]
+                                                    ),
+                                                  ]
+                                                ),
+                                              ]),
+                                            ])
+                                          : _vm._e(),
+                                      ]
+                                    ),
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c("td", { staticStyle: { padding: "0px" } }, [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "sc-gipzik iyhjGb",
+                                      staticStyle: {
+                                        "text-decoration": "none",
+                                        "font-size": "12px",
+                                      },
+                                      style:
+                                        "color:" +
+                                        _vm.generatorStore.text_color,
+                                      attrs: {
+                                        href:
+                                          "//" + _vm.generatorStore.website_url,
+                                      },
+                                    },
+                                    [
+                                      _c("span", [
+                                        _vm._v(
+                                          _vm._s(_vm.generatorStore.website_url)
+                                        ),
+                                      ]),
+                                    ]
+                                  ),
+                                ]),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "tr",
+                              {
+                                staticStyle: { "vertical-align": "middle" },
+                                attrs: { height: "25" },
+                              },
+                              [
+                                _c(
+                                  "td",
+                                  {
+                                    staticStyle: { "vertical-align": "middle" },
+                                    attrs: { width: "30" },
+                                  },
+                                  [
+                                    _c(
+                                      "table",
+                                      {
+                                        staticClass: "sc-gPEVay eQYmiW",
+                                        staticStyle: {
+                                          "vertical-align":
+                                            "-webkit-baseline-middle",
+                                        },
+                                        style:
+                                          "font-size:" +
+                                          _vm.generatorStore.font_size +
+                                          ";" +
+                                          "font-family: " +
+                                          _vm.generatorStore.font_family +
+                                          ";",
+                                        attrs: {
+                                          cellpadding: "0",
+                                          cellspacing: "0",
+                                        },
+                                      },
+                                      [
+                                        _vm.generatorStore.address_1 ||
+                                        _vm.generatorStore.address_2 ||
+                                        _vm.generatorStore.address_3 ||
+                                        _vm.generatorStore.address_4
+                                          ? _c("tbody", [
+                                              _c("tr", [
+                                                _c(
+                                                  "td",
+                                                  {
+                                                    staticStyle: {
+                                                      "vertical-align":
+                                                        "bottom",
+                                                    },
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "span",
+                                                      {
+                                                        staticClass:
+                                                          "sc-jlyJG bbyJzT",
+                                                        staticStyle: {
+                                                          display: "block",
+                                                        },
+                                                        style:
+                                                          "background-color:" +
+                                                          _vm.generatorStore
+                                                            .theme_color,
+                                                        attrs: { width: "11" },
+                                                      },
+                                                      [
+                                                        _c("img", {
+                                                          staticClass:
+                                                            "sc-iRbamj blSEcj",
+                                                          staticStyle: {
+                                                            display: "block",
+                                                          },
+                                                          style:
+                                                            "background-color:" +
+                                                            _vm.generatorStore
+                                                              .theme_color,
+                                                          attrs: {
+                                                            src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/address-icon-2x.png",
+                                                            width: "13",
+                                                          },
+                                                        }),
+                                                      ]
+                                                    ),
+                                                  ]
+                                                ),
+                                              ]),
+                                            ])
+                                          : _vm._e(),
+                                      ]
+                                    ),
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _vm.generatorStore.address_1 ||
+                                _vm.generatorStore.address_2 ||
+                                _vm.generatorStore.address_3 ||
+                                _vm.generatorStore.address_4
+                                  ? _c(
+                                      "td",
+                                      { staticStyle: { padding: "0px" } },
+                                      [
+                                        _c(
+                                          "span",
+                                          {
+                                            staticClass: "sc-csuQGl CQhxV",
+                                            staticStyle: {
+                                              "font-size": "12px",
+                                            },
+                                            style:
+                                              "color:" +
+                                              _vm.generatorStore.text_color,
+                                          },
+                                          [
+                                            _vm.generatorStore.address_1
+                                              ? _c("span", [
+                                                  _vm._v(
+                                                    "\n                            " +
+                                                      _vm._s(
+                                                        _vm.generatorStore
+                                                          .address_1
+                                                      )
+                                                  ),
+                                                ])
+                                              : _vm._e(),
+                                            _vm.generatorStore.address_2
+                                              ? _c("span", [
+                                                  _vm._v(
+                                                    _vm._s(
+                                                      ", " +
+                                                        _vm.generatorStore
+                                                          .address_2
+                                                    )
+                                                  ),
+                                                ])
+                                              : _vm._e(),
+                                            _vm.generatorStore.address_3
+                                              ? _c("span", [
+                                                  _vm._v(
+                                                    _vm._s(
+                                                      ", " +
+                                                        _vm.generatorStore
+                                                          .address_3
+                                                    )
+                                                  ),
+                                                ])
+                                              : _vm._e(),
+                                            _vm.generatorStore.address_4
+                                              ? _c("span", [
+                                                  _vm._v(
+                                                    _vm._s(
+                                                      ", " +
+                                                        _vm.generatorStore
+                                                          .address_4
+                                                    )
+                                                  ),
+                                                ])
+                                              : _vm._e(),
+                                          ]
+                                        ),
+                                      ]
+                                    )
+                                  : _vm._e(),
+                              ]
+                            ),
+                          ]),
+                        ]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _vm._m(3),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _c(
+                        "table",
+                        {
+                          staticClass: "sc-gPEVay eQYmiW",
+                          staticStyle: {
+                            "vertical-align": "-webkit-baseline-middle",
+                            width: "100%",
+                          },
+                          style:
+                            "font-size:" +
+                            _vm.generatorStore.font_size +
+                            ";" +
+                            "font-family: " +
+                            _vm.generatorStore.font_family +
+                            ";",
+                          attrs: { cellpadding: "0", cellspacing: "0" },
+                        },
+                        [
+                          _c("tbody", [
+                            _c("tr", [
+                              _vm.generatorStore.linkedin ||
+                              _vm.generatorStore.twitter ||
+                              _vm.generatorStore.instagram ||
+                              _vm.generatorStore.facebook ||
+                              _vm.generatorStore.company_logo
+                                ? _c("td", [
+                                    _c("img", {
+                                      staticClass: "sc-cHGsZl bHiaRe",
+                                      staticStyle: {
+                                        "max-width": "130px",
+                                        display: "inline-block",
+                                      },
+                                      attrs: {
+                                        src: _vm.generatorStore.company_logo,
+                                        role: "presentation",
+                                        width: "130",
+                                      },
+                                    }),
+                                  ])
+                                : _vm._e(),
+                            ]),
+                            _vm._v(" "),
+                            _vm._m(4),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [
+                                _c(
+                                  "table",
+                                  {
+                                    staticClass: "sc-gPEVay eQYmiW",
+                                    staticStyle: {
+                                      "vertical-align":
+                                        "-webkit-baseline-middle",
+                                      display: "inline-block",
+                                    },
+                                    style:
+                                      "font-size:" +
+                                      _vm.generatorStore.font_size +
+                                      ";" +
+                                      "font-family: " +
+                                      _vm.generatorStore.font_family +
+                                      ";",
+                                    attrs: {
+                                      cellpadding: "0",
+                                      cellspacing: "0",
+                                    },
+                                  },
+                                  [
+                                    _vm.generatorStore.linkedin ||
+                                    _vm.generatorStore.twitter ||
+                                    _vm.generatorStore.instagram ||
+                                    _vm.generatorStore.facebook
+                                      ? _c("tbody", [
+                                          _c(
+                                            "tr",
+                                            {
+                                              staticStyle: {
+                                                "text-align": "right",
+                                              },
+                                            },
+                                            [
+                                              _vm.generatorStore.facebook
+                                                ? _c("td", [
+                                                    _c(
+                                                      "a",
+                                                      {
+                                                        staticClass:
+                                                          "sc-hzDkRC kpsoyz",
+                                                        staticStyle: {
+                                                          display:
+                                                            "inline-block",
+                                                          padding: "0px",
+                                                        },
+                                                        style:
+                                                          "background-color:" +
+                                                          _vm.generatorStore
+                                                            .link_color,
+                                                        attrs: {
+                                                          href:
+                                                            "//" +
+                                                            _vm.generatorStore
+                                                              .facebook,
+                                                        },
+                                                      },
+                                                      [
+                                                        _c("img", {
+                                                          staticClass:
+                                                            "sc-bRBYWo ccSRck",
+                                                          style:
+                                                            "background-color:" +
+                                                            _vm.generatorStore
+                                                              .link_color,
+                                                          attrs: {
+                                                            src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/facebook-icon-2x.png",
+                                                            alt: "facebook",
+                                                            height: "24",
+                                                          },
+                                                        }),
+                                                      ]
+                                                    ),
+                                                  ])
+                                                : _vm._e(),
+                                              _vm._v(" "),
+                                              _vm._m(5),
+                                              _vm._v(" "),
+                                              _vm.generatorStore.twitter
+                                                ? _c("td", [
+                                                    _c(
+                                                      "a",
+                                                      {
+                                                        staticClass:
+                                                          "sc-hzDkRC kpsoyz",
+                                                        staticStyle: {
+                                                          display:
+                                                            "inline-block",
+                                                          padding: "0px",
+                                                        },
+                                                        style:
+                                                          "background-color:" +
+                                                          _vm.generatorStore
+                                                            .link_color,
+                                                        attrs: {
+                                                          href:
+                                                            "//" +
+                                                            _vm.generatorStore
+                                                              .twitter,
+                                                        },
+                                                      },
+                                                      [
+                                                        _c("img", {
+                                                          staticClass:
+                                                            "sc-bRBYWo ccSRck",
+                                                          staticStyle: {
+                                                            "max-width":
+                                                              "135px",
+                                                            display: "block",
+                                                          },
+                                                          style:
+                                                            "background-color:" +
+                                                            _vm.generatorStore
+                                                              .link_color,
+                                                          attrs: {
+                                                            src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/twitter-icon-2x.png",
+                                                            alt: "twitter",
+                                                            height: "24",
+                                                          },
+                                                        }),
+                                                      ]
+                                                    ),
+                                                  ])
+                                                : _vm._e(),
+                                              _vm._v(" "),
+                                              _vm._m(6),
+                                              _vm._v(" "),
+                                              _vm.generatorStore.linkedin
+                                                ? _c("td", [
+                                                    _c(
+                                                      "a",
+                                                      {
+                                                        staticClass:
+                                                          "sc-hzDkRC kpsoyz",
+                                                        staticStyle: {
+                                                          display:
+                                                            "inline-block",
+                                                          padding: "0px",
+                                                        },
+                                                        style:
+                                                          "background-color:" +
+                                                          _vm.generatorStore
+                                                            .link_color,
+                                                        attrs: {
+                                                          href:
+                                                            "//" +
+                                                            _vm.generatorStore
+                                                              .linkedin,
+                                                        },
+                                                      },
+                                                      [
+                                                        _c("img", {
+                                                          staticClass:
+                                                            "sc-bRBYWo ccSRck",
+                                                          staticStyle: {
+                                                            "max-width":
+                                                              "135px",
+                                                            display: "block",
+                                                          },
+                                                          style:
+                                                            "background-color:" +
+                                                            _vm.generatorStore
+                                                              .link_color,
+                                                          attrs: {
+                                                            src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/linkedin-icon-2x.png",
+                                                            alt: "linkedin",
+                                                            height: "24",
+                                                          },
+                                                        }),
+                                                      ]
+                                                    ),
+                                                  ])
+                                                : _vm._e(),
+                                              _vm._v(" "),
+                                              _vm._m(7),
+                                              _vm._v(" "),
+                                              _vm.generatorStore.instagram
+                                                ? _c("td", [
+                                                    _c(
+                                                      "a",
+                                                      {
+                                                        staticClass:
+                                                          "sc-hzDkRC kpsoyz",
+                                                        staticStyle: {
+                                                          display:
+                                                            "inline-block",
+                                                          padding: "0px",
+                                                        },
+                                                        style:
+                                                          "background-color:" +
+                                                          _vm.generatorStore
+                                                            .link_color,
+                                                        attrs: {
+                                                          href:
+                                                            "//" +
+                                                            _vm.generatorStore
+                                                              .instagram,
+                                                        },
+                                                      },
+                                                      [
+                                                        _c("img", {
+                                                          staticClass:
+                                                            "sc-bRBYWo ccSRck",
+                                                          staticStyle: {
+                                                            "max-width":
+                                                              "135px",
+                                                            display: "block",
+                                                          },
+                                                          style:
+                                                            "background-color:" +
+                                                            _vm.generatorStore
+                                                              .link_color,
+                                                          attrs: {
+                                                            src: "https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/instagram-icon-2x.png",
+                                                            alt: "instagram",
+                                                            height: "24",
+                                                          },
+                                                        }),
+                                                      ]
+                                                    ),
+                                                  ])
+                                                : _vm._e(),
+                                              _vm._v(" "),
+                                              _vm._m(8),
+                                            ]
+                                          ),
+                                        ])
+                                      : _vm._e(),
+                                  ]
+                                ),
+                              ]),
+                            ]),
+                          ]),
+                        ]
+                      ),
+                    ]),
+                  ]),
+                ]),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "table",
+              {
+                staticClass: "sc-gPEVay eQYmiW",
+                staticStyle: {
+                  "vertical-align": "-webkit-baseline-middle",
+                  width: "100%",
+                },
+                style:
+                  "font-size:" +
+                  _vm.generatorStore.font_size +
+                  ";" +
+                  "font-family: " +
+                  _vm.generatorStore.font_family +
+                  ";",
+                attrs: { cellpadding: "0", cellspacing: "0" },
+              },
+              [
+                _c("tbody", [
+                  _vm._m(9),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", {
+                      staticClass: "sc-jhAzac hmXDXQ",
+                      staticStyle: {
+                        width: "100%",
+                        "border-left": "none",
+                        display: "block",
+                      },
+                      style:
+                        "border-bottom: 1px solid " +
+                        _vm.generatorStore.theme_color,
+                      attrs: { direction: "horizontal", height: "1" },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(10),
+                ]),
+              ]
+            ),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("tr", [
+          _c("td", { staticStyle: { "text-align": "center" } }, [
+            !_vm.generatorStore.custom_cta_image &&
+            (_vm.generatorStore.custom_cta_url ||
+              _vm.generatorStore.custom_cta_copy)
+              ? _c(
+                  "span",
+                  { staticStyle: { display: "block", "text-align": "center" } },
+                  [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "sc-fAjcbJ byigni",
+                        staticStyle: {
+                          "border-width": "6px 12px",
+                          "border-style": "solid",
+                          display: "inline-block",
+                          "font-weight": "700",
+                          "text-decoration": "none",
+                          "text-align": "center",
+                          "line-height": "40px",
+                          "font-size": "12px",
+                          "border-radius": "3px",
+                        },
+                        style:
+                          "border-color:" +
+                          _vm.generatorStore.cta_color +
+                          "; background-color:" +
+                          _vm.generatorStore.cta_color +
+                          "; color: " +
+                          _vm.generatorStore.cta_text_color,
+                        attrs: {
+                          target: "_blank",
+                          rel: "noopener noreferrer",
+                          href: "//" + _vm.generatorStore.custom_cta_url,
+                        },
+                      },
+                      [_vm._v(_vm._s(_vm.generatorStore.custom_cta_copy))]
+                    ),
+                  ]
+                )
+              : _vm._e(),
+          ]),
+        ]),
+        _vm._v(" "),
+        _vm.generatorStore.custom_cta_image
+          ? _c("tr", [
+              _c("td", [
+                _c(
+                  "table",
+                  {
+                    staticClass: "sc-gPEVay eQYmiW",
+                    staticStyle: {
+                      "vertical-align": "-webkit-baseline-middle",
+                    },
+                    style:
+                      "font-size:" +
+                      _vm.generatorStore.font_size +
+                      ";" +
+                      "font-family: " +
+                      _vm.generatorStore.font_family +
+                      ";",
+                    attrs: { cellpadding: "0", cellspacing: "0" },
+                  },
+                  [
+                    _c("tbody", [
+                      _vm._m(11),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c(
+                          "span",
+                          {
+                            staticStyle: {
+                              display: "block",
+                              "text-align": "left",
+                            },
+                          },
+                          [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "sc-fAjcbJ byigni",
+                                staticStyle: {
+                                  "border-width": "initial",
+                                  "border-style": "none",
+                                  "border-color": "initial",
+                                  display: "inline-block",
+                                  "background-color": "transparent",
+                                  color: "rgb(255, 255, 255)",
+                                  "font-weight": "700",
+                                  "text-decoration": "none",
+                                  "text-align": "center",
+                                  "line-height": "1",
+                                  "font-size": "12px",
+                                  "border-radius": "3px",
+                                },
+                                attrs: {
+                                  target: "_blank",
+                                  rel: "noopener noreferrer",
+                                  href: _vm.generatorStore.custom_cta_url,
+                                },
+                              },
+                              [
+                                _c("img", {
+                                  staticClass: "sc-caSCKo jjNSwx",
+                                  staticStyle: {
+                                    "text-decoration": "none",
+                                    "max-width": "728px",
+                                  },
+                                  attrs: {
+                                    src: _vm.generatorStore.custom_cta_image,
+                                    role: "presentation",
+                                  },
+                                }),
+                              ]
+                            ),
+                          ]
+                        ),
+                      ]),
+                    ]),
+                  ]
+                ),
+              ]),
+            ])
+          : _vm._e(),
+      ]),
+    ]
+  )
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [_c("td", { attrs: { height: "10" } })])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [_c("td", { attrs: { height: "30" } })])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [_c("td", { attrs: { height: "30" } })])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", { attrs: { width: "15" } }, [_c("div")])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [_c("td", { attrs: { height: "10" } })])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", { attrs: { width: "5" } }, [_c("div")])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", { attrs: { width: "5" } }, [_c("div")])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", { attrs: { width: "5" } }, [_c("div")])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", { attrs: { width: "5" } }, [_c("div")])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [_c("td", { attrs: { height: "30" } })])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [_c("td", { attrs: { height: "30" } })])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [_c("td", { attrs: { height: "30" } })])
   },
 ]
 render._withStripped = true

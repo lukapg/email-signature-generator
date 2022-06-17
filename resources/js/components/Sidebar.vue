@@ -32,7 +32,22 @@
       </div>
     </div>
     <div class="sidebar-body">
-      <div class="page template" v-if="tab == 'template'"></div>
+      <div class="page template" v-if="tab == 'template'">
+        <div id="mainTitle" class="title-wrapper">
+          <div order="1" class="title">Select your template</div>
+        </div>
+        <div id="template" class="input-container">
+          <div class="input-block">
+            <span class="input-wrapper"
+              ><span class="input-label">Template</span
+              ><select class="input-field" v-model="generatorStore.template">
+                <option value="template_1">Template 1</option>
+                <option value="template_2">Template 2</option>
+              </select>
+            </span>
+          </div>
+        </div>
+      </div>
       <div class="page details" v-else-if="tab == 'details'">
         <div id="mainTitle" class="title-wrapper">
           <div order="1" class="title">Enter Your Signature Details</div>
